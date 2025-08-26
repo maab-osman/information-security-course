@@ -4,9 +4,7 @@
 
 ---
 
-## x) Read / Watch / Listen and Summarize
-
-### 1. Threat Modeling Articles & Videos
+## 1. Threat Modeling Articles & Videos
 
 **Braiterman et al 2020: Threat Modeling Manifesto**  
 - Key points:
@@ -68,10 +66,12 @@
           2. Processes: Any running code under our control 
           3. Data Flows: The element to connect entities and processes.
           4. Data Stores: where data is stored (drunms)
-          5. Trust boundaries: where we show that different elements are operated by different entities and control is enforced.
+          5. Trust boundaries: where we show that different elements are operated by different entities and control is enforced. <br><br>
+
+ 
    
              
-         <img width="662" height="390" alt="Screenshot 2025-08-26 at 1 51 19 PM" src="https://github.com/user-attachments/assets/8c809dd3-03cf-4b44-9165-db5f2d137e4e" />
+        <img width="600" height="300" alt="Screenshot 2025-08-26 at 1 51 19 PM" src="https://github.com/user-attachments/assets/8c809dd3-03cf-4b44-9165-db5f2d137e4e" />
 
     2. What could possibly go wrong?
        - The heart of TM
@@ -89,22 +89,41 @@
          
     5. Did we do a good job?
        - Would you recommend this project to your friend/colleague? If not, TM has not been applied efficiently.
+       - The model must be reviewed by all stakeholders at this stage.
   
     
     
-- Questions / Ideas:
-  - 
-  - 
+- Thoughts and questions:
+  - How do we measure the effectiveness of a threat model?
+  - Emphasizing data flow diagrams highlights the importance of understanding how information moves, not just where it is stored.
 
 **OWASP Cheat Sheets Series Team 2021: Threat Modeling Cheat Sheet**  
 - Key points:
-  - 
-  - 
-- Questions / Ideas:
-  - 
-  - 
+  - The article mentions key points mentioned earlier, but goes into depth on the advantages and challenges of threat modelling.
+    
+  - The Advantages of TM include:
+      - Identifying risks early on: TM focuses on identifying potential security issues during the early design phase.
+      - Increased Security Awareness: Result of the increased creative and critical thinking among participants that challenges them to "think like an attacker"
+      - Improved Visibility of Target of Evaluation: Result of the deep understanding of a system being evaluated.
+  -  TM can be challenging for development teams for several reasons that include:
+      - Lack of knowledge and experience in the field of security is hindering the process of modelling. This may result in overlooked issues. 
+      - Complex and time-consuming due to its systematic approach. This may lead to frustration and discouragement.
+      - Communication and collaboration between different teams. This may misdirect the project or leave it incomplete.
 
-### 2. Infosec Scene Podcast
+  - The challenges mentioned above can be addressed through:
+    - Inviting Security experts and teams to TM sessions, which can significantly improve the process.
+    - Invest in regular IT security training for development teams.
+    - Implement processes and tools that simplify and automate threat modelling.
+    - Promote a culture of security within an organization.
+    - Regular review sessions and cross-team workshops.
+    - 
+- ### Thoughts and questions:
+- Early identification of risks is only useful if organizations actually act on the findings. 
+- The suggestion to promote a security culture stands out, since it shifts TM from being a one-time exercise to becoming part of everyday development.  
+- Are automated TM tools reliable enough to reduce workload, or do they risk missing threats?  
+
+
+## 2. Infosec Scene Podcast
 
 **Darknet Diaries Episode:** *[insert episode]*  
 - Key points:
