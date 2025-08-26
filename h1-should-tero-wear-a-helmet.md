@@ -232,47 +232,47 @@ The episode poses a key question: why do security professionals embrace hacker c
   - Competitors
   - Insiders (people with access to customer data)
 
-   **Known TTPs:**
-  - Credential stuffing: reusing leaked passwords
+   **Known TTPs: (www.pentestpeople.com, n.d.)**
+  - Malware attacks: malicious software that gains access to personal information.
+  - SQL Injection Attacks: used to delete, change, or even control data or an entire database.
   - Phishing: to steal login or payment info
   - Insider misuse: abusing access rights
-  - Reconnaissance: competitors mapping out system structure
+  - Denial of Service (DoS): prevents users from accessing the site.
 
   **Risk Prioritization:**
   1. Data breach
-    - Probability: Medium
-    - Impact: Very High
+      - Probability: Medium
+      - Impact: Very High
   2. Payment Fraud
-    - Probability: Medium
-    - Impact: Very High
+      - Probability: Medium
+      - Impact: Very High
   3. AI manipulation
-    - Probability: Low
-    - Impact: Medium
+      - Probability: Low
+      - Impact: Medium
 
-  **Business Continuity:**
+  **Business Continuity (coder, 2024):**
   - Must maintain app uptime and data integrity.
-  - Develop customer trust
-  - Mindful of breaches that can cause reputation loss.
+  - Conduct a Risk and Impact Assessment
+  - Develop a detailed plan for essential operations.
+  - Encourage a Security Awareness Culture among employees.
 
  
 
 ### (3) What Are We Going to Do About It?
-- Mitigation strategies and META :  
+- Mitigation strategies and META (Khurana and Kaul, 2019) :  
   - implement MFA AND login alerts to avoid account takeovers: Mitigate
   - Input validation and model monitoring to avoid chatbot manipulation: Mitigate
   - Encryption and access control to control data breaches: Mitigate
   - Use Stripe/PayPal (third-party services) to combat fraud: Transfer
   - Role-based access to eliminate insider misuse: Mitigate
     
-- META: Mitigate, Eliminate, Transfer, Accept  
-- Prioritization of actions:  
 
 ### (4) Did We Do a Good Enough Job?
 - Continuous evaluation:
-    - Security audits
-    - Penetration tests
-    - Threat modelling
-    - Monitoring
+    - Security audits: Regularly assessing an organization's security controls to ensure compliance with standards and policies.
+    - Penetration tests: Simulating a cyberattack to find and exploit vulnerabilities in systems and applications.
+    - Threat modelling: Identifying and analyzing potential threats to a system (Shostack, n.d.)
+    - Monitoring:  Continuously collecting and analyzing data from IT systems to detect and respond to security incidents in real time. (Hpe.com, 2022)
 - Process improvement notes:
     - Security is ongoing.
     - Threat model evolves with new features, threat intelligence, and customer feedback.
@@ -280,6 +280,8 @@ The episode poses a key question: why do security professionals embrace hacker c
 ---
 
 ## Sources / References
+- Coder, seo (2024). Seven Best Practices for Business Continuity | BCG. [online] Bcg1. Available at: https://www.businesscontingencygroup.com/post/7-best-practices-for-an-effective-business-continuity-plan [Accessed 26 Aug. 2025].
+- Hpe.com. (2022). What is Security Monitoring? | Glossary. [online] Available at: https://www.hpe.com/emea_europe/en/what-is/security-monitoring.html.
 - Terokarvinen.com. (2025). Information Security - 2025 early autumn - ICI002AS2AE-3007. [online] Available at: https://terokarvinen.com/information-security/.
 - www.threatmodelingmanifesto.org. (n.d.). Threat Modeling Manifesto. [online] Available at: https://www.threatmodelingmanifesto.org/.
 - Shostack. (n.d.). World’s Shortest Threat Modeling Course. [online] Available at: http://www.youtube.com/playlist?list=PLCVhBqLDKoOOZqKt74QI4pbDUnXSQo0nf [Accessed 26 Aug. 2025].
@@ -289,6 +291,12 @@ The episode poses a key question: why do security professionals embrace hacker c
 - ACSM_Accro (2024). How Businesses Can Achieve Effective Cyber Hygiene. [online] Australian Cyber Security Magazine. Available at: https://australiancybersecuritymagazine.com.au/how-businesses-can-achieve-effective-cyber-hygiene/.
 - Poston, H. (2021). Top threat modeling frameworks: STRIDE, OWASP Top 10, MITRE ATT&CK framework and more | Infosec. [online] www.infosecinstitute.com. Available at: https://www.infosecinstitute.com/resources/management-compliance-auditing/top-threat-modeling-frameworks-stride-owasp-top-10-mitre-attck-framework/.
 - Catalan, C. (2024). A Comprehensive Guide to 7 Types of Threat Actors. [online] Teramind Blog | Content For Business. Available at: https://www.teramind.co/blog/types-of-threat-actors/.
+- www.pentestpeople.com. (n.d.). The Top 5 Cyber Threats Facing Businesses Today. [online] Available at: https://www.pentestpeople.com/blog-posts/the-top-5-cyber-threats-facing-businesses-today.
+- Khurana, R. and Kaul, D. (2019). Dynamic Cybersecurity Strategies for AI-Enhanced eCommerce: A Federated Learning Approach to Data Privacy. [online] Available at: https://www.researchgate.net/publication/386347451_Dynamic_Cybersecurity_Strategies_for_AI-Enhanced_eCommerce_A_Federated_Learning_Approach_to_Data_Privacy.
+
+‌
+
+‌
 
 ‌
 
