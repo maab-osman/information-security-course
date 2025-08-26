@@ -206,7 +206,8 @@ The episode poses a key question: why do security professionals embrace hacker c
 
     <img width="750" height="537" alt="Screenshot 2025-08-26 at 4 45 02 PM" src="https://github.com/user-attachments/assets/20386f60-3915-4fd0-a40a-11a4269ceb8f" />
 
-    ≈
+
+    **Customer Touchpoints:** 
     - Website and App
     - Email
     - AI chatbot
@@ -229,6 +230,12 @@ The episode poses a key question: why do security professionals embrace hacker c
   - Competitors
   - Insiders (people with access to customer data)
 
+   **Known TTPs:**
+  - Credential stuffing: reusing leaked passwords
+  - Phishing: to steal login or payment info
+  - Insider misuse: abusing access rights
+  - Reconnaissance: competitors mapping out system structure
+
   **Risk Prioritization:**
   1. Data breach
     - Probability: Medium
@@ -248,16 +255,25 @@ The episode poses a key question: why do security professionals embrace hacker c
  
 
 ### (3) What Are We Going to Do About It?
-- Mitigation strategies:  
-  - Reduce attack surface  
-  - Limit entry points  
-  - META: Mitigate, Eliminate, Transfer, Accept  
+- Mitigation strategies and META :  
+  - implement MFA AND login alerts to avoid account takeovers: Mitigate
+  - Input validation and model monitoring to avoid chatbot manipulation: Mitigate
+  - Encryption and access control to control data breaches: Mitigate
+  - Use Stripe/PayPal (third-party services) to combat fraud: Transfer
+  - Role-based access to eliminate insider misuse: Mitigate
+    
+- META: Mitigate, Eliminate, Transfer, Accept  
 - Prioritization of actions:  
 
 ### (4) Did We Do a Good Enough Job?
-- Audit / pentest plans  
-- Continuous evaluation / threat modeling  
-- Process improvement notes  
+- Continuous evaluation:
+    - Security audits
+    - Penetration tests
+    - Threat modelling
+    - Monitoring
+- Process improvement notes:
+    - Security is ongoing.
+    - Threat model evolves with new features, threat intelligence, and customer feedback.
 
 ---
 
