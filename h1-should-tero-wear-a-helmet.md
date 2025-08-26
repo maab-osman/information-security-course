@@ -132,7 +132,7 @@
 
 - On the Saturday morning of 2015, his girlfriend wanted to log into the medical institute to access her health record. When he poked around the website, and was able to log in as the admin easily. He had access to every single information on their system. This was a severe vulnerability.
   
-- He immediately sent an email to the Uruguayan CERT, and they resolved it. But he knew that t
+- He immediately sent an email to the Uruguayan CERT, and they resolved it.
   
 - In Feb 2017, someone hacked the same server. Alberto was one main suspects. The interpol visited his home, where Alberto told them everything and how exactly he found the issue 2 years ago. The police were suspicious of him and decided to hold him in jail.
   
@@ -169,8 +169,9 @@ The episode poses a key question: why do security professionals embrace hacker c
 
 ## a) Security Hygiene
 
+
 **Basic Security Practices (Everyone should follow):**  
-- Strong, unique passwords / password manager  
+- Strong, unique passwords/password manager  
 - Multi-factor authentication  
 - Regular software updates  
 - Email and phishing awareness  
@@ -178,7 +179,7 @@ The episode poses a key question: why do security professionals embrace hacker c
 - Backup of critical data  
 - Use of VPN on public networks  
 
-**Company / Organizational Security Hygiene:**  
+**Company Security Hygiene:**  
 - Network segmentation  
 - Security awareness training  
 - Incident response plan  
@@ -190,8 +191,17 @@ The episode poses a key question: why do security professionals embrace hacker c
 ## b) Make-Believe Boogie-Man – Threat Model for Imaginary Company
 
 ### Company Overview
-- **Name:**  
-- **Business:**  
-- **Customer touchpoints / key assets:**  
-- **Diagram of company systems:**  
+- **Name: GlowWell**  
+- **Business: A tech company that delivers personalized skincare and wellness products through a subscription model **  
 
+### (1) What are we working on?
+  - The key assets and their priority:
+      - Skin and health data (High): sensitive information regulated under GDPR
+      - Payment info (High): financial risk
+      - Customer profiles (Medium): Personalized, no sensitive info.
+      - Product inventory (Low): only operational risk.
+      - Recommendation chatbot (Medium):
+
+        <img width="750" height="537" alt="Screenshot 2025-08-26 at 4 45 02 PM" src="https://github.com/user-attachments/assets/20386f60-3915-4fd0-a40a-11a4269ceb8f" />
+
+      
