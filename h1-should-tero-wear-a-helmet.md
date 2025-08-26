@@ -40,8 +40,6 @@
          - Tendency to overfocus: Always remember the big picture.
          
 - ### Thoughts and questions:
-  - The manifesto emphasizes “values” like collaboration and continuous refinement. How do we ensure these are actually practiced in large teams?
-  - Fundamental principles stress alignment with development practices. Could misalignment create a false sense of security even if a threat model exists?
   - Creativity and systemic approaches must coexist, as too much focus on one may compromise the other.
   -  Communicating threat model outcomes in a way that stakeholders find meaningful is as important as identifying threats themselves.
   - Informed creativity is recommended as a pattern. How do we measure or evaluate creativity in threat modeling without compromising rigor?
@@ -93,9 +91,11 @@
   
     
     
-- Thoughts and questions:
+- ### Thoughts and questions:
   - How do we measure the effectiveness of a threat model?
   - Emphasizing data flow diagrams highlights the importance of understanding how information moves, not just where it is stored.
+
+     ---
 
 **OWASP Cheat Sheets Series Team 2021: Threat Modeling Cheat Sheet**  
 - Key points:
@@ -118,24 +118,53 @@
     - Regular review sessions and cross-team workshops.
     - 
 - ### Thoughts and questions:
-- Early identification of risks is only useful if organizations actually act on the findings. 
-- The suggestion to promote a security culture stands out, since it shifts TM from being a one-time exercise to becoming part of everyday development.  
-- Are automated TM tools reliable enough to reduce workload, or do they risk missing threats?  
+  - Early identification of risks is only useful if organizations actually act on the findings. 
+  - The suggestion to promote a security culture stands out, since it shifts TM from being a one-time exercise to becoming part of everyday development.  
+  - Are automated TM tools reliable enough to reduce workload, or do they risk missing threats?
+   ---
 
 
 ## 2. Infosec Scene Podcast
 
-**Darknet Diaries Episode:** *[insert episode]*  
-- Key points:
-  - 
-  - 
-- Lessons learned / observations:
-  - 
-  - 
-- Questions / Ideas:
-  - 
-  - 
+**Darknet Diaries Episode:** *Episode 25: Alberto*  
 
+- Alberto, a 41-year-old Uruguayan. A skilled and well-credentialed InfoSec professional (former Interpol specialist) detected and responsibly reported a critical vulnerability  on a medical provider's website, but two years later, he was framed as the perpetrator of a ransomware attack.
+
+- On the Saturday morning of 2015, his girlfriend wanted to log into the medical institute to access her health record. When he poked around the website, and was able to log in as the admin easily. He had access to every single information on their system. This was a severe vulnerability.
+  
+- He immediately sent an email to the Uruguayan CERT, and they resolved it. But he knew that t
+  
+- In Feb 2017, someone hacked the same server. Alberto was one main suspects. The interpol visited his home, where Alberto told them everything and how exactly he found the issue 2 years ago. The police were suspicious of him and decided to hold him in jail.
+  
+- During the home search, the police found hacking tools, crypto wallets, security equipment, and paraphernalia like a rubber ducky and an Anonymous mask in his home. Rather than recognizing them as standard InfoSec tools or educational props, they used this as confirmation of guilt.
+  
+- The police also found 30 credit cards and 13,000 Euros in cash, which increased their suspicion, but Alberto claimed he needed them for crypto trading.
+
+- High psychological pressure and threats toward his family pushed Alberto into a false confession.
+  
+- They powered on devices instead of creating forensically sound disk images and left a large portion of Alberto’s devices and data unexamined, jeopardizing evidence integrity.
+
+- The incident devastated his girlfriend’s mental health, resulted in the loss of their relationship, and inflicted trauma that lasted well beyond the incident.
+  
+- This was the first time a hacker had gone to prison in Uruguay, so it was a big deal.  The police may have hyped up the story too, thinking it was a great achievement for them to have captured a dangerous hacker.
+
+- Once in prison, Alberto was showered with admiration by other inmates, earning status as “the hacker,” very different from how law enforcement treated him.
+
+- After spending nine months in prison, Alberto was set free. To Alberto, the investigation went wrong in a million ways.  The police weren’t knowledgeable enough on how to handle this case, and didn’t take all the evidence, and they handled the evidence poorly.
+
+Security Community vs. Legal Perception
+The episode poses a key question: why do security professionals embrace hacker culture? The answer lies in that very closeness to their adversaries—it’s a practical necessity for defending networks effectively.
+  
+- ### Lessons learned:
+  - Even when vulnerabilities are reported responsibly, organizations may not act, leaving both systems and the ethical hacker exposed.
+  - This case highlights the risk of bias: investigators saw Alberto’s hacker tools as incriminating instead of professional.
+  - The stigma around “hackers” damages the trust needed between security professionals and law enforcement.
+  - Security is not just technical; it deeply affects people’s lives, relationships, and reputations.
+    
+- Questions:
+  - Could mandatory security training for investigators prevent these kinds of miscarriages of justice?
+  - How can organizations create safer channels for responsible disclosure so ethical hackers don’t risk becoming suspects?
+    
 ---
 
 ## a) Security Hygiene
