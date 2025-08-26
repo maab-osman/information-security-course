@@ -194,7 +194,7 @@ The episode poses a key question: why do security professionals embrace hacker c
 
 ### Company Overview
 - **Name: GlowWell**  
-- **Business: A tech company that delivers personalized skincare and wellness products through a subscription model **  
+- **Business: A tech company that delivers personalized skincare and wellness products through a subscription model**  
 
 ### (1) What are we working on?
   - The key assets and their priority:
@@ -217,7 +217,7 @@ The episode poses a key question: why do security professionals embrace hacker c
  
 
 ### (2) What Can Go Wrong?
-- Threat modeling techniques used:
+- Threat modeling techniques used (Poston, 2021):
    - STRIDE
    - CIA
    - MITRE ATT&K
@@ -227,7 +227,7 @@ The episode poses a key question: why do security professionals embrace hacker c
   <img width="756" height="351" alt="Screenshot 2025-08-26 at 5 03 52 PM" src="https://github.com/user-attachments/assets/a60fbcc4-5eef-4d6a-b3f1-8fdac9c37537" />
 
  
-  **Threat Actors:**
+  **Threat Actors (Catalan, 2024):**
   - Cybercriminals
   - Competitors
   - Insiders (people with access to customer data)
@@ -287,7 +287,12 @@ The episode poses a key question: why do security professionals embrace hacker c
 - darknetdiaries.com. (2018). Alberto – Darknet Diaries. [online] Available at: https://darknetdiaries.com/episode/25/.
 - NordVPN. (2024). Personal cybersecurity: 23 tips and best practices. [online] Available at: https://nordvpn.com/blog/personal-cybersecurity/.
 - ACSM_Accro (2024). How Businesses Can Achieve Effective Cyber Hygiene. [online] Australian Cyber Security Magazine. Available at: https://australiancybersecuritymagazine.com.au/how-businesses-can-achieve-effective-cyber-hygiene/.
-- 
+- Poston, H. (2021). Top threat modeling frameworks: STRIDE, OWASP Top 10, MITRE ATT&CK framework and more | Infosec. [online] www.infosecinstitute.com. Available at: https://www.infosecinstitute.com/resources/management-compliance-auditing/top-threat-modeling-frameworks-stride-owasp-top-10-mitre-attck-framework/.
+- Catalan, C. (2024). A Comprehensive Guide to 7 Types of Threat Actors. [online] Teramind Blog | Content For Business. Available at: https://www.teramind.co/blog/types-of-threat-actors/.
+
+‌
+
+‌
 
 ‌
 
