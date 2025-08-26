@@ -13,14 +13,14 @@
   - The output of a threat model is known as threats.
   - Threats inform decisions that you might make.
   - Threat modelling is catered to everyone, especially those who are concerned for their privacy and security.
-  - The Manifesto is highlighted under 2 guidelines: Values and Principles.
-
-    a. Value is something that has relative worth or importance
-    - Some values include:
-      
+       
+- The Manifesto is highlighted under 2 guidelines: Values and Principles.
+  a. Value is something that has relative worth or importance
+  - Some values include:
       - People and collaboration
       - Doing Threat modelling
       -  Continuous refinement
+             
         
     b. Principles describe the fundamental truths of threat modelling. There are 3 types:
     
