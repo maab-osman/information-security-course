@@ -15,26 +15,28 @@
   - Threat modelling is catered to everyone, especially those who are concerned for their privacy and security.
        
 - The Manifesto is highlighted under 2 guidelines: Values and Principles.
+
   a. Value is something that has relative worth or importance
-  - Some values include:
-      - People and collaboration
-      - Doing Threat modelling
-      -  Continuous refinement
-             
-        
-    b. Principles describe the fundamental truths of threat modelling. There are 3 types:
+  
+    Some values include:
+
+    - People and collaboration
+    - Doing Threat modelling
+    - Continuous refinement
+              
+  b. Principles describe the fundamental truths of threat modelling. There are 3 types:
     
-      1. Fundamental: truths that enable successful threat modelling
+    - Fundamental: truths that enable successful threat modelling
          - The best use of TM is to improve the security and privacy of a system through early and frequent analysis.
          - The outcomes of TM are meaningful when they are of value to stakeholders.
          - TM must align with an organization's development practices and follow design changes and iterations.
            
       2. Patterns that are highly recommended
-         - Systemic Approach: use of structure during process/
+         - Systemic Approach: use of structure during process
          - Informed creativity: include both craft and science
          - Varied Viewpoints: prioritize diverse ideas.
            
-      4. anti-patterns that are avoided.
+      4. Anti-patterns that are avoided.
          - Hero Threat Modeler: TM is not exclusive.
          - Admiration for the problem: prioritize finding practical and relevant solutions.
          - Tendency to overfocus: Always remember the big picture.
@@ -43,7 +45,7 @@
   - Creativity and systemic approaches must coexist, as too much focus on one may compromise the other.
   -  Communicating threat model outcomes in a way that stakeholders find meaningful is as important as identifying threats themselves.
   - Informed creativity is recommended as a pattern. How do we measure or evaluate creativity in threat modeling without compromising rigor?
-  - Varied viewpoints are highlighted as essential. Which stakeholders are often overlooked, and how can their perspectives be integrated?
+  - Diverse viewpoints are highlighted as essential. Which stakeholders are often overlooked, and how can their perspectives be integrated?
   - Applying these principles in fast-paced environments can be challenging but necessary to keep systems secure.
   ---
  
@@ -54,7 +56,8 @@
     
   - The 4-question framework of TM includes:
     1. What are we working on?
-       -Whiteboards, Value of collaboration (Creating simultaneously), could be much wider.
+
+      - Whiteboards, Value of collaboration (Creating simultaneously), could be much wider.
       - Collaborating to help us answer this question is essential.
       - Sketching is a way to create inputs and list down issues that could help us answer the next question in the framework.
       - Records help us learn new things about the system we are working on and help us fill necessary details.
@@ -65,11 +68,11 @@
           3. Data Flows: The element to connect entities and processes.
           4. Data Stores: where data is stored (drunms)
           5. Trust boundaries: where we show that different elements are operated by different entities and control is enforced. <br><br>
-
- 
-   
              
         <img width="600" height="300" alt="Screenshot 2025-08-26 at 1 51 19 PM" src="https://github.com/user-attachments/assets/8c809dd3-03cf-4b44-9165-db5f2d137e4e" />
+
+        *screenshot from video demonstrating all 5 different symbols and their usage
+
 
     2. What could possibly go wrong?
        - The heart of TM
@@ -79,7 +82,8 @@
        - STRIDE is a fundamental way to improve our TM and get better answers for our questions by ensuring that we have at least one threat of each component.
          
     3. What could we do about it?
-       -There are many variations, and one constant is "we are going to track our work".
+
+       - There are many variations, and one constant is "we are going to track our work".
        - Each problems need something to be done about it.
        - The key is not to ignore these issues and treat them as development items.
        - Risk management is applied to a subset of the threats under TM to help us control the impact and make a decision.
@@ -116,7 +120,7 @@
     - Implement processes and tools that simplify and automate threat modelling.
     - Promote a culture of security within an organization.
     - Regular review sessions and cross-team workshops.
-    - 
+      
 - ### Thoughts and questions:
   - Early identification of risks is only useful if organizations actually act on the findings. 
   - The suggestion to promote a security culture stands out, since it shifts TM from being a one-time exercise to becoming part of everyday development.  
@@ -152,8 +156,6 @@
 
 - After spending nine months in prison, Alberto was set free. To Alberto, the investigation went wrong in a million ways.  The police weren’t knowledgeable enough on how to handle this case, and didn’t take all the evidence, and they handled the evidence poorly.
 
-Security Community vs. Legal Perception
-The episode poses a key question: why do security professionals embrace hacker culture? The answer lies in that very closeness to their adversaries—it’s a practical necessity for defending networks effectively.
   
 - ### Lessons learned:
   - Even when vulnerabilities are reported responsibly, organizations may not act, leaving both systems and the ethical hacker exposed.
@@ -161,7 +163,7 @@ The episode poses a key question: why do security professionals embrace hacker c
   - The stigma around “hackers” damages the trust needed between security professionals and law enforcement.
   - Security is not just technical; it deeply affects people’s lives, relationships, and reputations.
     
-- Questions:
+- ### Questions:
   - Could mandatory security training for investigators prevent these kinds of miscarriages of justice?
   - How can organizations create safer channels for responsible disclosure so ethical hackers don’t risk becoming suspects?
     
