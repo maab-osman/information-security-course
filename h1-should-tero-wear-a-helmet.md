@@ -170,7 +170,7 @@ The episode poses a key question: why do security professionals embrace hacker c
 ## a) Security Hygiene
 
 
-**Basic Security Practices (Everyone should follow):**  
+**Basic Security Practices (NordVPN, 2024):**  
 - Strong, unique passwords/password manager  
 - Multi-factor authentication  
 - Regular software updates  
@@ -179,8 +179,10 @@ The episode poses a key question: why do security professionals embrace hacker c
 - Backup of critical data  
 - Use of VPN on public networks  
 
-**Company Security Hygiene:**  
-- Network segmentation  
+**Company Security Hygiene (ACSM_Accro, 2024) :**  
+- Network segmentation
+- Automating software patching
+- Setting up data backups
 - Security awareness training  
 - Incident response plan  
 - Regular audits and penetration tests  
@@ -278,11 +280,20 @@ The episode poses a key question: why do security professionals embrace hacker c
 ---
 
 ## Sources / References
-- Karvinen 2024: Information Security Course, [link](https://terokarvinen.com/information-security/)  
-- Braiterman et al 2020: Threat Modeling Manifesto  
-- Shostack 2022: World's Shortest Threat Modeling Course  
-- OWASP Cheat Sheets Series Team 2021: Threat Modeling Cheat Sheet  
-- Darknet Diaries Podcast, Episode: *[insert episode]*  
+- Terokarvinen.com. (2025). Information Security - 2025 early autumn - ICI002AS2AE-3007. [online] Available at: https://terokarvinen.com/information-security/.
+- www.threatmodelingmanifesto.org. (n.d.). Threat Modeling Manifesto. [online] Available at: https://www.threatmodelingmanifesto.org/.
+- Shostack. (n.d.). World’s Shortest Threat Modeling Course. [online] Available at: http://www.youtube.com/playlist?list=PLCVhBqLDKoOOZqKt74QI4pbDUnXSQo0nf [Accessed 26 Aug. 2025].
+- OWASP (2024). Threat Modeling. [online] cheatsheetseries.owasp.org. Available at: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html. 
+- darknetdiaries.com. (2018). Alberto – Darknet Diaries. [online] Available at: https://darknetdiaries.com/episode/25/.
+- NordVPN. (2024). Personal cybersecurity: 23 tips and best practices. [online] Available at: https://nordvpn.com/blog/personal-cybersecurity/.
+- ACSM_Accro (2024). How Businesses Can Achieve Effective Cyber Hygiene. [online] Australian Cyber Security Magazine. Available at: https://australiancybersecuritymagazine.com.au/how-businesses-can-achieve-effective-cyber-hygiene/.
+- 
+
+‌
+
+‌
+
+‌
 - Other sources used:  
 
       
