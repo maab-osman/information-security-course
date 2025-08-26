@@ -202,6 +202,71 @@ The episode poses a key question: why do security professionals embrace hacker c
       - Product inventory (Low): only operational risk.
       - Recommendation chatbot (Medium):
 
-        <img width="750" height="537" alt="Screenshot 2025-08-26 at 4 45 02 PM" src="https://github.com/user-attachments/assets/20386f60-3915-4fd0-a40a-11a4269ceb8f" />
+    **Diagram of company systems:**  
+
+    <img width="750" height="537" alt="Screenshot 2025-08-26 at 4 45 02 PM" src="https://github.com/user-attachments/assets/20386f60-3915-4fd0-a40a-11a4269ceb8f" />
+
+    ≈
+    - Website and App
+    - Email
+    - AI chatbot
+    - Delivery Tracking
+ 
+
+### (2) What Can Go Wrong?
+- Threat modeling techniques used:
+   - STRIDE
+   - CIA
+   - MITRE ATT&K
+  
+  **Threats modelling table example:**  
+
+  <img width="756" height="351" alt="Screenshot 2025-08-26 at 5 03 52 PM" src="https://github.com/user-attachments/assets/a60fbcc4-5eef-4d6a-b3f1-8fdac9c37537" />
+
+ 
+  **Threat Actors:**
+  - Cybercriminals
+  - Competitors
+  - Insiders (people with access to customer data)
+
+  **Risk Prioritization:**
+  1. Data breach
+    - Probability: Medium
+    - Impact: Very High
+  2. Payment Fraud
+    - Probability: Medium
+    - Impact: Very High
+  3. AI manipulation
+    - Probability: Low
+    - Impact: Medium
+
+  **Business Continuity:**
+  - Must maintain app uptime and data integrity.
+  - Develop customer trust
+  - Mindful of breaches that can cause reputation loss.
+
+ 
+
+### (3) What Are We Going to Do About It?
+- Mitigation strategies:  
+  - Reduce attack surface  
+  - Limit entry points  
+  - META: Mitigate, Eliminate, Transfer, Accept  
+- Prioritization of actions:  
+
+### (4) Did We Do a Good Enough Job?
+- Audit / pentest plans  
+- Continuous evaluation / threat modeling  
+- Process improvement notes  
+
+---
+
+## Sources / References
+- Karvinen 2024: Information Security Course, [link](https://terokarvinen.com/information-security/)  
+- Braiterman et al 2020: Threat Modeling Manifesto  
+- Shostack 2022: World's Shortest Threat Modeling Course  
+- OWASP Cheat Sheets Series Team 2021: Threat Modeling Cheat Sheet  
+- Darknet Diaries Podcast, Episode: *[insert episode]*  
+- Other sources used:  
 
       
