@@ -16,25 +16,82 @@
   - Threats inform decisions that you might make.
   - Threat modelling is catered to everyone, especially those who are concerned for their privacy and security.
   - The Manifesto is highlighted under 2 guidelines: Values and Principles.
+
     a. Value is something that has relative worth or importance
     - Some values include:
+      
       - People and collaboration
       - Doing Threat modelling
       -  Continuous refinement
         
-    b.
-
-  
-  - 
-  - 
-- Questions / Ideas:
-  - 
-  - 
-
+    b. Principles describe the fundamental truths of threat modelling. There are 3 types:
+    
+      1. Fundamental: truths that enable successful threat modelling
+         - The best use of TM is to improve the security and privacy of a system through early and frequent analysis.
+         - The outcomes of TM are meaningful when they are of value to stakeholders.
+         - TM must align with an organization's development practices and follow design changes and iterations.
+           
+      2. Patterns that are highly recommended
+         - Systemic Approach: use of structure during process/
+         - Informed creativity: include both craft and science
+         - Varied Viewpoints: prioritize diverse ideas.
+           
+      4. anti-patterns that are avoided.
+         - Hero Threat Modeler: TM is not exclusive.
+         - Admiration for the problem: prioritize finding practical and relevant solutions.
+         - Tendency to overfocus: Always remember the big picture.
+         
+- ### Thoughts and questions:
+  - The manifesto emphasizes “values” like collaboration and continuous refinement. How do we ensure these are actually practiced in large teams?
+  - Fundamental principles stress alignment with development practices. Could misalignment create a false sense of security even if a threat model exists?
+  - Creativity and systemic approaches must coexist, as too much focus on one may compromise the other.
+  -  Communicating threat model outcomes in a way that stakeholders find meaningful is as important as identifying threats themselves.
+  - Informed creativity is recommended as a pattern. How do we measure or evaluate creativity in threat modeling without compromising rigor?
+  - Varied viewpoints are highlighted as essential. Which stakeholders are often overlooked, and how can their perspectives be integrated?
+  - Applying these principles in fast-paced environments can be challenging but necessary to keep systems secure.
+  ---
+ 
 **Shostack 2022: World's Shortest Threat Modeling Course (12 parts)**  
 - Key points:
-  - 
-  - 
+  - We threat model to anticipate problems when they're inexpensive to deal with, before the start of any project.
+  - It is easier to make changes early on, as TM is a set of methods that allows us to think of security to ensure the security of the project.
+    
+  - The 4-question framework of TM includes:
+    1. What are we working on?
+       -Whiteboards, Value of collaboration (Creating simultaneously), could be much wider.
+      - Collaborating to help us answer this question is essential.
+      - Sketching is a way to create inputs and list down issues that could help us answer the next question in the framework.
+      - Records help us learn new things about the system we are working on and help us fill necessary details.
+      - Data Flow diagrams are important as threats tend to follow data. They are also simple and easy to use to help us understand what we are working on.
+      - Flow diagrams include 5 symbols:
+          1. External entities: outside our control (sharp pointy corners)
+          2. Processes: Any running code under our control 
+          3. Data Flows: The element to connect entities and processes.
+          4. Data Stores: where data is stored (drunms)
+          5. Trust boundaries: where we show that different elements are operated by different entities and control is enforced.
+   
+             
+         <img width="662" height="390" alt="Screenshot 2025-08-26 at 1 51 19 PM" src="https://github.com/user-attachments/assets/8c809dd3-03cf-4b44-9165-db5f2d137e4e" />
+
+    2. What could possibly go wrong?
+       - The heart of TM
+       - STRIDE or Kill Chain frameworks can help us answer these questions.
+       - Structures can be helpful as well.
+       - The STRIDE structure stands for: Spoofing, Tampering, Repudiation, Information Disclosure, Denial Disclosure and Elevation of Privileges. Each of these are problems that occurs in ALL FORMS OF systems like software, IoT, or mobiles.
+       - STRIDE is a fundamental way to improve our TM and get better answers for our questions by ensuring that we have at least one threat of each component.
+         
+    3. What could we do about it?
+       -There are many variations, and one constant is "we are going to track our work".
+       - Each problems need something to be done about it.
+       - The key is not to ignore these issues and treat them as development items.
+       - Risk management is applied to a subset of the threats under TM to help us control the impact and make a decision.
+       - TM precedes risk management and informs it.
+         
+    5. Did we do a good job?
+       - Would you recommend this project to your friend/colleague? If not, TM has not been applied efficiently.
+  
+    
+    
 - Questions / Ideas:
   - 
   - 
@@ -80,6 +137,7 @@
 - Regular audits and penetration tests  
 
 ---
+<br>
 
 ## b) Make-Believe Boogie-Man – Threat Model for Imaginary Company
 
