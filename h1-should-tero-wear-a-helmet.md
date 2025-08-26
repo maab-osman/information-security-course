@@ -282,19 +282,20 @@
 ---
 
 ## Sources / References
-- Coder, seo (2024). Seven Best Practices for Business Continuity | BCG. [online] Bcg1. Available at: https://www.businesscontingencygroup.com/post/7-best-practices-for-an-effective-business-continuity-plan [Accessed 26 Aug. 2025].
-- Hpe.com. (2022). What is Security Monitoring? | Glossary. [online] Available at: https://www.hpe.com/emea_europe/en/what-is/security-monitoring.html.
-- Terokarvinen.com. (2025). Information Security - 2025 early autumn - ICI002AS2AE-3007. [online] Available at: https://terokarvinen.com/information-security/.
-- www.threatmodelingmanifesto.org. (n.d.). Threat Modeling Manifesto. [online] Available at: https://www.threatmodelingmanifesto.org/.
-- Shostack. (n.d.). World’s Shortest Threat Modeling Course. [online] Available at: http://www.youtube.com/playlist?list=PLCVhBqLDKoOOZqKt74QI4pbDUnXSQo0nf [Accessed 26 Aug. 2025].
-- OWASP (2024). Threat Modeling. [online] cheatsheetseries.owasp.org. Available at: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html. 
-- darknetdiaries.com. (2018). Alberto – Darknet Diaries. [online] Available at: https://darknetdiaries.com/episode/25/.
-- NordVPN. (2024). Personal cybersecurity: 23 tips and best practices. [online] Available at: https://nordvpn.com/blog/personal-cybersecurity/.
+
 - ACSM_Accro (2024). How Businesses Can Achieve Effective Cyber Hygiene. [online] Australian Cyber Security Magazine. Available at: https://australiancybersecuritymagazine.com.au/how-businesses-can-achieve-effective-cyber-hygiene/.
-- Poston, H. (2021). Top threat modeling frameworks: STRIDE, OWASP Top 10, MITRE ATT&CK framework and more | Infosec. [online] www.infosecinstitute.com. Available at: https://www.infosecinstitute.com/resources/management-compliance-auditing/top-threat-modeling-frameworks-stride-owasp-top-10-mitre-attck-framework/.
 - Catalan, C. (2024). A Comprehensive Guide to 7 Types of Threat Actors. [online] Teramind Blog | Content For Business. Available at: https://www.teramind.co/blog/types-of-threat-actors/.
-- www.pentestpeople.com. (n.d.). The Top 5 Cyber Threats Facing Businesses Today. [online] Available at: https://www.pentestpeople.com/blog-posts/the-top-5-cyber-threats-facing-businesses-today.
+- Coder, seo (2024). Seven Best Practices for Business Continuity | BCG. [online] Bcg1. Available at: https://www.businesscontingencygroup.com/post/7-best-practices-for-an-effective-business-continuity-plan [Accessed 26 Aug. 2025].
+- darknetdiaries.com. (2018). Alberto – Darknet Diaries. [online] Available at: https://darknetdiaries.com/episode/25/.
+- Hpe.com. (2022). What is Security Monitoring? | Glossary. [online] Available at: https://www.hpe.com/emea_europe/en/what-is/security-monitoring.html.
 - Khurana, R. and Kaul, D. (2019). Dynamic Cybersecurity Strategies for AI-Enhanced eCommerce: A Federated Learning Approach to Data Privacy. [online] Available at: https://www.researchgate.net/publication/386347451_Dynamic_Cybersecurity_Strategies_for_AI-Enhanced_eCommerce_A_Federated_Learning_Approach_to_Data_Privacy.
+- NordVPN. (2024). Personal cybersecurity: 23 tips and best practices. [online] Available at: https://nordvpn.com/blog/personal-cybersecurity/.
+- OWASP (2024). Threat Modeling. [online] cheatsheetseries.owasp.org. Available at: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html. 
+- Poston, H. (2021). Top threat modeling frameworks: STRIDE, OWASP Top 10, MITRE ATT&CK framework and more | Infosec. [online] www.infosecinstitute.com. Available at: https://www.infosecinstitute.com/resources/management-compliance-auditing/top-threat-modeling-frameworks-stride-owasp-top-10-mitre-attck-framework/.
+- Shostack. (n.d.). World’s Shortest Threat Modeling Course. [online] Available at: http://www.youtube.com/playlist?list=PLCVhBqLDKoOOZqKt74QI4pbDUnXSQo0nf [Accessed 26 Aug. 2025].
+- Terokarvinen.com. (2025). Information Security - 2025 early autumn - ICI002AS2AE-3007. [online] Available at: https://terokarvinen.com/information-security/.
+- www.pentestpeople.com. (n.d.). The Top 5 Cyber Threats Facing Businesses Today. [online] Available at: https://www.pentestpeople.com/blog-posts/the-top-5-cyber-threats-facing-businesses-today.
+- www.threatmodelingmanifesto.org. (n.d.). Threat Modeling Manifesto. [online] Available at: https://www.threatmodelingmanifesto.org/.
 
 ‌
 
