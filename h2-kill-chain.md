@@ -89,11 +89,8 @@
 - Use advanced security software that can detect suspicious behaviors.
 - Watch for unusual outbound traffic to unknown websites.
 
----
 
-
-
-## References
+**Reference:**  
 - MITRE (2025). MITRE ATT&CK. [online] Mitre.org. Available at: https://attack.mitre.org/.
 - Darktrace.com. (2017). Darktrace. [online] Available at: https://www.darktrace.com/cyber-ai-glossary/cyber-kill-chain.
 - Trellix.com. (2025). Available at: https://www.trellix.com/security-awareness/threat-intelligence/what-is-mitre-attack-framework/.
