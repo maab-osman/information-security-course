@@ -49,7 +49,14 @@ This week, I start building my own hacking lab. The goal is to **learn hacking b
 
 ## a) Can't Fish
 Disable networking and show that packets don’t go through.  
-Example:  
+
+- Successfully disabled networking and demonstrated that packets cannot traverse outside the local system.
+- I did it by configuring UTM VM network mode to "Host Only" to restrict external network access
+- I used the commmand down below to test connectivity to Cloudfare's DNS server
+ 
 ```bash
-ping 1.1.1.1
-ping 8.8.8.8
+ping -c 4 1.1.1.1
+```
+
+- The result recived was "Network is unreachable", proving zero packet transmission to external networks.
+  
