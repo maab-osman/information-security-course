@@ -159,13 +159,34 @@ PORT STATE SERVICE VERSION
  - The new nmap scan reveals port 21 is now open, which was not present in the initial scan.
  - The scan detected the new service: ftp with the specific version vsftpd 3.0.5.
  - Conclusion: Installing a daemon opens new network ports, directly increasing the system's "attack surface" by creating new potential  entry points that must be managed and secured.
+   
+---
+
+## d) Bandit oh-five
+1) 0 to 1
+   - I learned how to connect to a remote server with SSH and read a simple text file using cat.
 <img width="526" height="121" alt="Screenshot 2025-09-09 at 12 43 19 AM" src="https://github.com/user-attachments/assets/32ba6c81-4ce2-4219-b787-1fa97c46b9c6" />
+2) 1 to 2
+   - I figured out how to open a file with a tricky name "-" by using ./ to tell the command it’s a file, not an option.
+
 <img width="319" height="57" alt="Screenshot 2025-09-09 at 12 43 53 AM" src="https://github.com/user-attachments/assets/7667ce36-30e9-4892-a9c1-48fe9009815f" />
+
+3) 2 to 3
+  - I discovered how to read a filename that contains spaces by wrapping it in quotes or escaping spaces.
+    
 <img width="469" height="48" alt="Screenshot 2025-09-09 at 12 44 27 AM" src="https://github.com/user-attachments/assets/bf01bf64-cbc2-4e02-b173-0b2b8f46c5ea" />
+
+4) 3 to 4
+   - I explored hidden files inside a folder and used cat to reveal the password.
+     
 <img width="471" height="146" alt="Screenshot 2025-09-09 at 12 45 01 AM" src="https://github.com/user-attachments/assets/eb21fa21-f85b-49b5-ab5d-7ca78b1ecd4f" />
+
+5) 4 to 5
+   - I practiced identifying the correct file among many by using the file command to check which one was human-readable text.
 <img width="674" height="168" alt="Screenshot 2025-09-09 at 12 45 47 AM" src="https://github.com/user-attachments/assets/8a31c411-6b3f-4dad-9093-ce1364644da0" />
 
-
+Final Thoughts:
+- At first I kept messing up with the file names and didn’t understand why the commands weren’t working, but slowly I noticed that small details like spaces, dashes, or hidden dots actually matter a lot in Linux. Each level felt a bit tricky, but once I got the right command it made sense. I still feel like I have to look things up a lot, but now I’m less scared of the command line because I’ve seen how problems can be solved step by step.
 
 
 
