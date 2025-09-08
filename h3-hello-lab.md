@@ -120,8 +120,45 @@ Nmap done: 1 IP address (1 host up) scanned in 8.01
  - Service on Port 631 open IPP is a printing service called CUPS for managing printers.
  - I learned that this is a standard helper service on many Linux systems and usually not high risk if connected to a network.
 
-   
- - Conclusion: The scan reveals a standard, clean Debian installation with only essential services running locally.
+  ## b) Daemon Scan
+  
+- The Apache web server was already pre-installed and running on the system, so installing it again would not have created a visible difference in the port scan results.
+-  Thats why I vsftpd (FTP server) because it was a new service, guaranteeing it would provide a clear comparison for the assignment with previous one.
+-  The vsftpd (Very Secure FTP Daemon) package was selected as it is a standard, lightweight FTP server commonly available in Linux repositories
+-  I installed and launched vsftp using the commands below:
+  
+  ```bash
+sudo apt install vsftpd -y
+sudo systemctl start vsftpd
+```
+
+-  After disabling the network again, I ran nmpap for port scaning similar to the previous task using the command below:
+  
+  ```bash
+sudo nmap -A localhost
+
+```
+
+-  Sample of the scan output:
+```bash
+Host is up (0.00012s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 996 closed tcp ports (reset)
+PORT STATE SERVICE VERSION
+21/tcp open  ftp   vsftpd 3.0.5
+22/tcp open  ssh   OpenSSH 10.0p2 Debian 7 (protocol 2.0)
+80/tcp open  http  Apache httpd 2.4.65 ((Debian))
+|_http-server-header: Apache/2.4.65 (Debian)
+|_http-title: Apache2 Debian Default Page: It works
+631/tcp open ipp CUPS 2.4
+|_http-server-header: CUPS/2.4 IPP/2.1
+|_http-title: Home -  CUPS 2.4.10
+| http-robots.txt: 1 disallowed entry
+```
+ ### Differences compared to the previous task
+ - The new nmap scan reveals port 21 is now open, which was not present in the initial scan.
+ - The scan detected the new service: ftp with the specific version vsftpd 3.0.5.
+ - Conclusion: Installing a daemon opens new network ports, directly increasing the system's "attack surface" by creating new potential  entry points that must be managed and secured.
 
 
 
