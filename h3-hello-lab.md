@@ -159,6 +159,15 @@ PORT STATE SERVICE VERSION
  - The new nmap scan reveals port 21 is now open, which was not present in the initial scan.
  - The scan detected the new service: ftp with the specific version vsftpd 3.0.5.
  - Conclusion: Installing a daemon opens new network ports, directly increasing the system's "attack surface" by creating new potential  entry points that must be managed and secured.
+<img width="526" height="121" alt="Screenshot 2025-09-09 at 12 43 19 AM" src="https://github.com/user-attachments/assets/32ba6c81-4ce2-4219-b787-1fa97c46b9c6" />
+<img width="319" height="57" alt="Screenshot 2025-09-09 at 12 43 53 AM" src="https://github.com/user-attachments/assets/7667ce36-30e9-4892-a9c1-48fe9009815f" />
+<img width="469" height="48" alt="Screenshot 2025-09-09 at 12 44 27 AM" src="https://github.com/user-attachments/assets/bf01bf64-cbc2-4e02-b173-0b2b8f46c5ea" />
+<img width="471" height="146" alt="Screenshot 2025-09-09 at 12 45 01 AM" src="https://github.com/user-attachments/assets/eb21fa21-f85b-49b5-ab5d-7ca78b1ecd4f" />
+<img width="674" height="168" alt="Screenshot 2025-09-09 at 12 45 47 AM" src="https://github.com/user-attachments/assets/8a31c411-6b3f-4dad-9093-ce1364644da0" />
+
+
+
+
 
 
 
