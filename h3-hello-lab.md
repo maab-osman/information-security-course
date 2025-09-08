@@ -52,6 +52,7 @@ Disable networking and show that packets don’t go through.
 
 - Successfully disabled networking and demonstrated that packets cannot traverse outside the local system.
 - I did it by configuring UTM VM network mode to "Host Only" to restrict external network access
+  <img width="630" height="111" alt="Screenshot 2025-09-08 at 9 56 47 PM" src="https://github.com/user-attachments/assets/29c5fbf2-a29c-4308-b401-c8570b73430d" />
 - I used the commmand down below to test connectivity to Cloudfare's DNS server
  
 ```bash
