@@ -61,4 +61,22 @@ ping -c 4 1.1.1.1
 
 - The result recived was "Network is unreachable", proving zero packet transmission to external networks.
   <img width="422" height="89" alt="Screenshot 2025-09-08 at 9 55 07 PM" src="https://github.com/user-attachments/assets/2bd308aa-02c6-4991-9632-170ae3930f00" />
+
+## b) Local Only
+-  Successfully performed portscan of localhost using nmap
+-  From the previous task, the network remained in "Host Only" mode throughout the scan
+-  I have utilized nmap for port scanning in this assignment. I used this command to scan:
   
+  ```bash
+sudo nmap -A localhost
+```
+
+-  I managed to identify open ports and services running on the local system
+-  This is the output of the scan
+
+<img width="848" height="616" alt="Screenshot 2025-09-08 at 10 22 55 PM" src="https://github.com/user-attachments/assets/407e8269-4a05-4371-a052-1482cf5fbf9f" />
+
+ - The majority of ports (997) were closed, indicating a reasonably secure default configuration. 
+
+
+
