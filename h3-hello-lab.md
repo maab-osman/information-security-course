@@ -59,4 +59,5 @@ ping -c 4 1.1.1.1
 ```
 
 - The result recived was "Network is unreachable", proving zero packet transmission to external networks.
+  <img width="422" height="89" alt="Screenshot 2025-09-08 at 9 55 07 PM" src="https://github.com/user-attachments/assets/2bd308aa-02c6-4991-9632-170ae3930f00" />
   
