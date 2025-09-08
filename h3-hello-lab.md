@@ -65,7 +65,13 @@ ping -c 4 1.1.1.1
 ## b) Local Only
 -  Successfully performed portscan of localhost using nmap
 -  From the previous task, the network remained in "Host Only" mode throughout the scan
--  I have utilized nmap for port scanning in this assignment. I used this command to scan:
+-  For this task I had to install nmap using this command
+
+  ```bash
+sudo apt install nmap
+```
+
+-  Then I utilized nmap for port scanning in this assignment. I used this command to scan:
   
   ```bash
 sudo nmap -A localhost
@@ -73,10 +79,50 @@ sudo nmap -A localhost
 
 -  I managed to identify open ports and services running on the local system
 -  This is the output of the scan
+```bash
+Other addresses for localhost (not scanned) : ::1
+Not shown: 997 closed tcp ports (reset)
+PORT STATE SERVICE VERSION
+22/tcp open 55h OpenSSH 10.0p2 Debian 7 (protocol 2.0)
+80/tcp open http Apache httpd 2.4.65 ((Debian))
+http-server-header: Apache/2.4.65 (Debian)
+http-title: Apache2 Debian Default Page: It works
 
-<img width="848" height="616" alt="Screenshot 2025-09-08 at 10 22 55 PM" src="https://github.com/user-attachments/assets/407e8269-4a05-4371-a052-1482cf5fbf9f" />
+631/tcp open ipp     CUPS 2.4
+_http-server-header: CUPS/2.4 IPP/2.1
+http-robots.txt: 1 disallowed entry
 
- - The majority of ports (997) were closed, indicating a reasonably secure default configuration. 
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux kernel
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.01
+```
+ - The majority of ports (997) were closed, indicating a reasonably secure default configuration.
+ - PORT STATE SERVICE VERSION is the header for the results each indicating its state.
+ - The port 22 OpenSSH allows secure remote command-line access to the system.
+   
+```bash
+22/tcp open 55h OpenSSH 10.0p2 Debian 7 (protocol 2.0)
+
+```
+ - After research about this specific program, I discovered That it must be protected with a very strong password because hackers love to try and break into it.
+   
+ ```bash
+80/tcp open http Apache httpd 2.4.65 ((Debian))
+
+```
+ - Service on Port 80 HTTP is a web server hosting the default "It works!" page. This website host means that my computer can now act as a mini-webserver, but like SSH, it needs to be kept updated to be secure.
+   
+ ```bash
+631/tcp open ipp CUPS 2.4
+
+```
+   
+ - Service on Port 631 open IPP is a printing service called CUPS for managing printers.
+ - I learned that this is a standard helper service on many Linux systems and usually not high risk if connected to a network.
+
+   
+ - Conclusion: The scan reveals a standard, clean Debian installation with only essential services running locally.
+
 
 
 
