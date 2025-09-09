@@ -13,28 +13,30 @@ This week, I start building my own hacking lab. The goal is to **learn hacking b
 - Add the ISO as a virtual CD and boot the VM.
 - Try the live desktop first to test stuff before installing.
 - Run the installer, choose English and Finnish settings, and set up user info.
-- After install, log in and update everything using terminal commands.
+- After installation, log in and update everything using terminal commands.
 - Install a firewall and reboot.
-- To fix small screen and enable copy paste, install VirtualBox Guest Additions.
+- To fix the small screen and enable copy and paste, install VirtualBox Guest Additions.
 
   My thoughts:
   - I had no idea what an ISO was, but it’s just like a digital CD
   - I used the arm64 version since I’m on a Mac with Apple Silicon
   - Gave the VM 4GB RAM and 60GB disk, seemed to run okay.
   - Didn’t hit the black screen bug, but good to know about the xforcevesa trick just in case.
-  - UTM was a better option in my case instead of VirtualBox as it had some issues there.
+  - UTM was a better option in my case, instead of VirtualBox, as it had some issues there.
+
+  Refrence: Terokarvinen.com. (2024). Install Debian on Virtualbox - Updated 2024. [online] Available at: https://terokarvinen.com/2021/install-debian-on-virtualbox/.
   
-  
+---
 ### Karvinen 2020: Command Line Basics Revisited
 - The command line is super old but still super useful.
 - pwd, ls, and cd to move around folders.
 - nano filename lets you edit files in the terminal.
 - mkdir, mv, cp, and rm are for making, moving, copying, and deleting stuff.
 - Be careful with rm -r as it deletes everything with no undo!
-- ssh lets you connect to other computers remotely.
+- SSH lets you connect to other computers remotely.
 - scp is for copying files between computers.
 - Use man or --help to learn what a command does.
-- history shows your past commands, and ctrl + R helps you search them.
+- History shows your past commands, and Ctrl + R helps you search them.
 - Important folders: /home/, /etc/, /media/, /var/log/.
 - sudo gives you admin powers.
 - Install software with sudo apt-get install packagename.
@@ -42,8 +44,10 @@ This week, I start building my own hacking lab. The goal is to **learn hacking b
 - You can play a game called Nethack in the terminal.
 
   Thoughts:
-  - I have some experience with the command line but it was nice to referesh some concepts that I dont use on the daily .
-  - Got to learn about the about the important directories but still don’t fully understand their practicality.
+  - I have some experience with the command line but it was nice to refresh some concepts that I dont use on the daily .
+  - Got to learn about the important directories but still don’t fully understand their practicality.
+
+Reference: Terokarvinen.com. (2020). Command Line Basics Revisited. [online] Available at: https://terokarvinen.com/2020/command-line-basics-revisited/ [Accessed 9 Sep. 2025].
 
 ---
 
@@ -51,9 +55,9 @@ This week, I start building my own hacking lab. The goal is to **learn hacking b
 Disable networking and show that packets don’t go through.  
 
 - Successfully disabled networking and demonstrated that packets cannot traverse outside the local system.
-- I did it by configuring UTM VM network mode to "Host Only" to restrict external network access
+- I did it by configuring the UTM VM network mode to "Host Only" to restrict external network access (UTM Documentation, 2022)
   <img width="630" height="111" alt="Screenshot 2025-09-08 at 9 56 47 PM" src="https://github.com/user-attachments/assets/29c5fbf2-a29c-4308-b401-c8570b73430d" />
-- I used the commmand down below to test connectivity to Cloudfare's DNS server
+- I used the command below to test connectivity to Cloudflare's DNS server
  
 ```bash
 ping -c 4 1.1.1.1
@@ -61,6 +65,9 @@ ping -c 4 1.1.1.1
 
 - The result recived was "Network is unreachable", proving zero packet transmission to external networks.
   <img width="422" height="89" alt="Screenshot 2025-09-08 at 9 55 07 PM" src="https://github.com/user-attachments/assets/2bd308aa-02c6-4991-9632-170ae3930f00" />
+
+  Sources used: UTM Documentation. (2022). Network. [online] Available at: https://docs.getutm.app/settings-qemu/devices/network/network/ [Accessed 9 Sep. 2025].
+
 
 ## b) Local Only
 -  Successfully performed portscan of localhost using nmap
