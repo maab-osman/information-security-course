@@ -179,6 +179,7 @@ PORT STATE SERVICE VERSION
 ## d) Bandit oh-five
 ### Level 0
 I learned how to connect to a remote server with SSH and read a simple text file using cat.
+
 <img width="526" height="121" alt="Screenshot 2025-09-09 at 12 43 19 AM" src="https://github.com/user-attachments/assets/32ba6c81-4ce2-4219-b787-1fa97c46b9c6" />
 
 ### Level 1
@@ -198,6 +199,7 @@ I explored hidden files inside a folder and used cat to reveal the password.
 
 ### Level 4
 I practiced identifying the correct file among many by using the file command to check which one was human-readable text.
+
 <img width="674" height="168" alt="Screenshot 2025-09-09 at 12 45 47 AM" src="https://github.com/user-attachments/assets/8a31c411-6b3f-4dad-9093-ce1364644da0" />
 
 <br></br> Final Thoughts:
