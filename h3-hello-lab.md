@@ -104,30 +104,37 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 8.01
 ```
  - The majority of ports (997) were closed, indicating a reasonably secure default configuration.
- - PORT STATE SERVICE VERSION is the header for the results each indicating its state.
- - The port 22 OpenSSH allows secure remote command-line access to the system.
-   
+ - PORT STATE SERVICE VERSION is the header for the results each indicating its state (GeeksforGeeks, 2025).
+ - The port 22 OpenSSH allows secure remote command-line access to the system (Netcomlearning.com, 2024).
+
 ```bash
 22/tcp open 55h OpenSSH 10.0p2 Debian 7 (protocol 2.0)
 
 ```
- - After research about this specific program, I discovered That it must be protected with a very strong password because hackers love to try and break into it.
+ - After research about this specific program, I discovered that it must be protected with a very strong password because hackers love to try to break into it.
    
  ```bash
 80/tcp open http Apache httpd 2.4.65 ((Debian))
 
 ```
- - Service on Port 80 HTTP is a web server hosting the default "It works!" page. This website host means that my computer can now act as a mini-webserver, but like SSH, it needs to be kept updated to be secure.
+ - Service on Port 80 HTTP is a web server hosting the default "It works!" page. This website host means that my computer can now act as a mini-webserver, but like SSH, it needs to be kept updated to be secure (GeeksforGeeks, 2024).
    
  ```bash
 631/tcp open ipp CUPS 2.4
 
 ```
    
- - Service on Port 631 open IPP is a printing service called CUPS for managing printers.
- - I learned that this is a standard helper service on many Linux systems and usually not high risk if connected to a network.
-
-  ## b) Daemon Scan
+ - Service on Port 631 open IPP is a printing service called CUPS for managing printers (CBT Nuggets, 2024).
+ - I learned that this is a standard helper service on many Linux systems and usually not high risk if connected to a network
+   
+Sources used:
+-CBT Nuggets. (2024). What is Port 631? [online] Available at: https://www.cbtnuggets.com/common-ports/what-is-port-631.
+- GeeksforGeeks (2025). Nmap Scanning Results. [online] GeeksforGeeks. Available at: https://www.geeksforgeeks.org/ethical-hacking/nmap-scanning-results/ [Accessed 6 Sep. 2025].
+- GeeksforGeeks (2024). What is Port 80? [online] GeeksforGeeks. Available at: https://www.geeksforgeeks.org/computer-networks/what-is-port-80/.
+- Netcomlearning.com. (2024). What You Need to Know About Port 22 and Secure Shell (SSH). [online] Available at: https://www.netcomlearning.com/blog/what-is-port-22.
+‌
+ ---
+  ## c) Daemon Scan
   
 - The Apache web server was already pre-installed and running on the system, so installing it again would not have created a visible difference in the port scan results.
 -  Thats why I vsftpd (FTP server) because it was a new service, guaranteeing it would provide a clear comparison for the assignment with previous one.
