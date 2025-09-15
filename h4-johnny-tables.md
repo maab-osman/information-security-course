@@ -7,7 +7,7 @@
 ## x) Read & Summarize (brief bullets + one comment or question each)
 
 ### OWASP Top 10 (2021)
-#### A01:2021 — Broken Access Control
+#### A01:2021 - Broken Access Control
 - Users can do things they’re not supposed to, like seeing or changing other people’s data.
 - Common problems:
   - Changing URLs or data to access someone else’s account.
@@ -54,7 +54,7 @@ Thoughts: Is it more a lack of awareness or just pressure to ship fast that lead
   Thoughts: it’s easy to forget how much modern apps rely on third-party stuff. But if even one of those pieces is outdated, it’s like leaving the back door open. Makes me think twice about skipping those update reminders.
 
 
-#### A03:2021 — Injection
+#### A03:2021 - Injection
 - Attackers trick the app into running harmful commands by inserting malicious input.
 - The common types include:
   - SQL injection
@@ -119,16 +119,34 @@ This challenge was included at the end of the developer tools lesson.
 
 <img width="512" height="181" alt="Screenshot 2025-09-15 at 10 35 36 PM" src="https://github.com/user-attachments/assets/5c2f0172-ae36-4346-910d-c85ddc09960f" />
 
-
-Observatioins: 
 ---
 
 ## c) Not Outdated — Update OS & Applications (Linux)
+I have updated all operating system by running the following commands:
+
+```bash
+sudo apt update
+
+sudo apt full-upgrade -y
+
+sudo reboot
+```
+
 
 
 ---
+## d) Sequel — SQLZoo tasks
 
-### Notes on safety & write-ups
-- Keep your write-ups **educational**: explain *why* things work, not provide easily copy-pasteable exploit strings that could be used outside labs.  
-- When describing exploit components, focus on **purpose** (e.g., "this part forces a boolean true" or "this part enumerates a column") and the **defensive fix** (prepared statements, least privilege, input validation).
+- 0 SELECT basics — notes & answers
+  1. I used the WHERE clause with a string match to retrieve the population of Germany, reinforcing how single quotes denote string values in SQL.
+  2. I employed the IN operator to filter results for multiple countries, learning how to efficiently check against a list of values.
+  3. I utilized the BETWEEN operator to find countries with areas within a specified range, understanding how inclusive range checks work in SQL.
+     
+- 2 SELECT from World — subtasks 1 & 2
+  - Subtask 1: I executed a basic SELECT query to retrieve all countries' names, continents, and populations, gaining an overview of the dataset's structure and content.
+  - Subtask 2: I applied the WHERE clause with a population filter (>= 200000000) to list only large countries, practicing numerical comparisons in SQL.
+
+**Reference:** SQLZoo — https://sqlzoo.net/
+
+
 
