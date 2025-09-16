@@ -1,6 +1,6 @@
 ## H4: Johnny Tables
 
-### A01:2021 - Broken Access Control
+### A01 - Broken Access Control
 - Users can do things they’re not supposed to, like seeing or changing other people’s data.
 - Common problems:
   - Changing URLs or data to access someone else’s account.
@@ -16,7 +16,7 @@
   Thoughts: I was surprised to learn that simple URL changes can expose sensitive data easily.
   
 
-### A05:2021 - Security Misconfiguration
+### A05 - Security Misconfiguration
 - The app or system is not set up securely, so it might have weak settings or default passwords still active.
 - Common problems:
   - Leaving sample apps or default accounts on live servers.
@@ -31,7 +31,7 @@
     
 Thoughts: Is it more a lack of awareness or just pressure to ship fast that leads to these misconfigurations?
   
-### A06:2021 - Vulnerable and Outdated Components
+### A06 - Vulnerable and Outdated Components
 - In short terms, Your app uses old or unsafe parts that hackers can exploit.
 - There is risk if:
   - You don’t know what versions of software you’re using.
@@ -47,7 +47,7 @@ Thoughts: Is it more a lack of awareness or just pressure to ship fast that lead
   Thoughts: It’s easy to forget how much modern apps rely on third-party stuff. But if even one of those pieces is outdated, it’s like leaving the back door open. Makes me think twice about skipping those update reminders.
 
 
-### A03:2021 - Injection
+### A03 - Injection
 - Attackers trick the app into running harmful commands by inserting malicious input.
 - The common types include:
   - SQL injection
