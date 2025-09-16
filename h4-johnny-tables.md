@@ -5,15 +5,15 @@
 - Common problems:
   - Changing URLs or data to access someone else’s account.
   - Acting like an admin without permission.
-  - APIs missing proper access checks.
+  - APIs are missing proper access checks.
   - Misconfigured settings like CORS or cookies.
 - It matters because it can lead to data leaks, unauthorized actions, or full system compromise.
-- There are multiple prevention methods mentioned like:
+- There are multiple prevention methods mentioned, like:
     - Always deny access by default unless allowed.
     - Reuse access control logic across the app.
     - Log and monitor failed access attempts.
 
-  Thoughts: I was suprised to learn that simple URL changes can expose sensitive data easily.
+  Thoughts: I was surprised to learn that simple URL changes can expose sensitive data easily.
   
 
 ### A05:2021 - Security Misconfiguration
@@ -44,7 +44,7 @@ Thoughts: Is it more a lack of awareness or just pressure to ship fast that lead
   - Using tools to check for known security issues.
   - Only downloading components from trusted sources.
 
-  Thoughts: it’s easy to forget how much modern apps rely on third-party stuff. But if even one of those pieces is outdated, it’s like leaving the back door open. Makes me think twice about skipping those update reminders.
+  Thoughts: It’s easy to forget how much modern apps rely on third-party stuff. But if even one of those pieces is outdated, it’s like leaving the back door open. Makes me think twice about skipping those update reminders.
 
 
 ### A03:2021 - Injection
@@ -66,8 +66,8 @@ Thoughts: Injection vulnerabilities highlight the critical importance of separat
 The comic shows a mom naming her child
 " Robert'); DROP TABLE Students;-- "
 I recognized this sql query but on a second thought I realized that it is  malicious input is used to trick a system into deleting a whole database table.
-- The teacher on the call later emphasies that the data has been lost because of her son (The injection).
-- The mother replies saying that they should have "sanitized" their database inputs reffering to he practice of validating and cleaning user input to prevent injection attacks.
+- The teacher on the call later emphasized that the data had been lost because of her son (The injection).
+- The mother replies saying that they should have "sanitized" their database inputs referring to he practice of validating and cleaning user input to prevent injection attacks.
 
 **References**
 - Munroe, R. (n.d.). Exploits of a Mom. [online] xkcd. Available at: https://xkcd.com/327/.
@@ -79,21 +79,24 @@ I recognized this sql query but on a second thought I realized that it is  malic
 ‌
 ---
 
-## a) Goat — Install WebGoat 2023.4
-- Using my UTM virtual machine I was capable of installing successfully following the guide givent by the teacher. Terokarvinen.com. (2023)
-- The same commands on the guide were used except I faced an issue trying to download java.
-- After trying to cofigure the issue, I ran this command since I was not sure if it belonged to my previously installed files.
-- apt search openjdk
-- This solved the issue since I figured O access to a different version of java, "openjdk-21-jre".
+## a) Goat - Install WebGoat 2023.4
+Using my UTM virtual machine, I was able to install successfully following the guide given by the teacher. Terokarvinen.com. (2023)
+- The same commands on the guide were used, except I faced an issue trying to download Java.
+- After trying to configure the issue, I ran this command since I was not sure if it belonged to my previously installed files.
+```bash
+apt search openjdk
+```
+- This solved the issue since I figured out access to a different version of Java, "openjdk-21-jre", then proceeded to download it.
+- Finally, I was able to launch WebGoat using the commands mentioned in the guide. The picture below was taken from the terminal imdicating a successful launch.
   
 <img width="629" height="125" alt="Screenshot 2025-09-15 at 10 10 05 PM" src="https://github.com/user-attachments/assets/e1d2f1e8-462b-476b-b7a8-5807f58c069a"/>
 <br></br>
 
-- After downloading I was capable of launching webgoat and opening the url on my browser.
+- Following the guide, I changed the port and was able to open the URL on my browser as seen below.
 
 <img width="346" height="217" alt="Screenshot 2025-09-15 at 10 15 07 PM" src="https://github.com/user-attachments/assets/7ac07a0c-e3fd-4287-8d4c-8547fbabd573" />
 
-
+References: Terokarvinen.com. (2023). Try Web Hacking on New Webgoat 2023.4. [online] Available at: https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/.
 
 ---
 
