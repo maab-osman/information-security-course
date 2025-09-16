@@ -65,9 +65,9 @@ Thoughts: Injection vulnerabilities highlight the critical importance of separat
 ### Munroe - xkcd 327: "Exploits of a Mom"
 The comic shows a mom naming her child
 " Robert'); DROP TABLE Students;-- "
-I recognized this sql query but on a second thought I realized that it is  malicious input is used to trick a system into deleting a whole database table.
+I recognized this SQL query but on second thought, I realized that it is  malicious input that is used to trick a system into deleting a whole database table.
 - The teacher on the call later emphasized that the data had been lost because of her son (The injection).
-- The mother replies saying that they should have "sanitized" their database inputs referring to he practice of validating and cleaning user input to prevent injection attacks.
+- The mother replies, saying that they should have "sanitized" their database inputs, referring to the practice of validating and cleaning user input to prevent injection attacks.
 
 **References**
 - Munroe, R. (n.d.). Exploits of a Mom. [online] xkcd. Available at: https://xkcd.com/327/.
@@ -87,7 +87,7 @@ Using my UTM virtual machine, I was able to install successfully following the g
 apt search openjdk
 ```
 - This solved the issue since I figured out access to a different version of Java, "openjdk-21-jre", then proceeded to download it.
-- Finally, I was able to launch WebGoat using the commands mentioned in the guide. The picture below was taken from the terminal indicating a successful launch.
+- Finally, I was able to launch WebGoat using the commands mentioned in the guide. The picture below was taken from the terminal, indicating a successful launch.
   
 <img width="629" height="125" alt="Screenshot 2025-09-15 at 10 10 05 PM" src="https://github.com/user-attachments/assets/e1d2f1e8-462b-476b-b7a8-5807f58c069a"/>
 <br></br>
@@ -97,7 +97,7 @@ apt search openjdk
 <img width="346" height="217" alt="Screenshot 2025-09-15 at 10 15 07 PM" src="https://github.com/user-attachments/assets/7ac07a0c-e3fd-4287-8d4c-8547fbabd573" />
 <br></br>
 
-References: Terokarvinen.com. (2023). Try Web Hacking on New Webgoat 2023.4. [online] Available at: https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/.
+Reference: Terokarvinen.com. (2023). Try Web Hacking on New Webgoat 2023.4. [online] Available at: https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/.
 
 ---
 
@@ -125,7 +125,7 @@ Learnings: This exercise taught me that critical data, such as networkNum, is of
 ---
 
 ## c) Update OS & Applications
-I have updated all operating system by running the following commands:
+I have updated all operating systems by running the following commands:
 
 ```bash
 sudo apt update
@@ -135,7 +135,7 @@ sudo apt full-upgrade -y
 sudo reboot
 ```
 
-
+Reference: Bill Sky - The Computer Guy! (2024). Linux 04: How to update and install applications on Linux. [online] YouTube. Available at: https://www.youtube.com/watch?v=GmqhbsaGk3I [Accessed 14 Sep. 2025].
 
 ---
 ## d) Sequel - SQLZoo tasks
@@ -152,36 +152,50 @@ sudo reboot
 **Reference:** sqlzoo.net. (n.d.). SQLZOO. [online] Available at: https://sqlzoo.net/wiki/SQL_Tutorial.
 
 ---
-## e) PortSwigger Labs — SQL injection in WHERE clause.
+## e) PortSwigger Labs - SQL injection in WHERE clause.
 
 
-The vulnerability was in the gift **category** filter where user-supplied input was concatenated directly into a SQL `WHERE` clause without sanitization or prepared statements. By manipulating the category parameter, an attacker could change the logic of the query so that it returned all products including unreleased ones. This is a good demonstration of a broken access-control issue.
+The vulnerability was in the pets **category** filter where user-supplied input was concatenated directly into a SQL `WHERE` clause without sanitization or prepared statements. By manipulating the category parameter, an attacker could change the logic of the query so that it returned all products including unreleased ones. This is a good demonstration of a broken access-control issue.
 
 
 ### How I found the vulnerability
-- Noted the category parameter in the URL (`?category=Gifts`) was reflected in page content.  
+- Noted the category parameter in the URL (`?category=Pets`) was reflected in page content.  
 - Injected a syntax-breaking character and observed a SQL error in the response, which indicated that user input reached the database query unsanitized.  
-- The error and subsequent behavioral changes (different number of results) confirmed the injection point.
+- The error and subsequent behavioral changes confirmed the injection point.
 
-
-### Anatomy of the exploit (conceptual)
-> **Note:** below is a conceptual breakdown only; do **not** reuse exploit strings outside an authorised lab.
-
+### Anatomy of the exploit
 **Payload entry point**  
 - The `category` parameter in the HTTP GET request is inserted directly into the `WHERE` clause on the server side. No input sanitization or parameterization was applied.
 
 **Payload purpose**  
-- The attack aims to alter the `WHERE` clause from a restrictive filter into an always-true condition, and to neutralize any subsequent filtering (e.g., `released = 1`). Conceptually this is done by:
+- The attack aims to alter the `WHERE` clause from a restrictive filter into an always true condition, and to neutralize any subsequent filtering. Conceptually, this is done by:
   1. Terminating the original string or expression.
   2. Injecting a boolean condition that is always true (so the `WHERE` matches every row).
   3. Commenting out the rest of the original query so protective filters are ignored.
 
-**Proof extraction method**  
-- After injection, the application responded with all products, including those where `released = 0`. The presence of previously hidden items in the response is definitive proof that the query logic was altered.
+**Why it worked**  
+- The server-side code constructs the query via string concatenation: `SELECT * FROM products WHERE category = '" + userInput + "' AND released = 1`.
+- My input `Pets' OR 1=1--` transformed this into `SELECT * FROM products WHERE category = 'Pets' OR 1=1--' AND released = 1`. The `OR 1=1` makes the entire `WHERE` condition true for every row, and the `--` comments out the `AND released=1` filter, removing the access control.
+<img width="696" height="298" alt="Screenshot 2025-09-16 at 9 48 37 AM" src="https://github.com/user-attachments/assets/9a3f892b-fc79-47fc-a1fe-3765e709b244" />
+<br></br>
 
-**Why it works (conceptual)**  
-- Example server-side construction (conceptual):  
+**Defensive measures & mitigations for this scenario (Martinez, 2024)**:
 
+- Use parameterized queries, as this is the most effective defense. It separates SQL code from data, preventing the interpreter from executing injected commands.
+
+- Implement strict allow-list validation for inputs like category names. For example, only allow letters.
+
+- The database user account used by the application should have minimal permissions.
+  
+**Reflection:** This lab underscored how a simple lack of input sanitization in a single parameter can completely break an application's security model. It highlights that security is not a feature but a fundamental requirement that must be integrated into the code's foundation, not added on later.
+
+References: 
+- Martinez, J. (2024). How to Prevent SQL Injection Attacks: 6 Proven Methods. [online] Strongdm.com. Available at: https://www.strongdm.com/blog/how-to-prevent-sql-injection-attacks.
+- portswigger.net. (n.d.). Lab: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data | Web Security Academy. [online] Available at: https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data.
+
+‌
+
+‌
 
 
 
