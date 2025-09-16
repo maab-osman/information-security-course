@@ -1,13 +1,6 @@
-#### Johnny Tables
-> **Important:** keep all activities safe, legal and ethical. Do **not** test vulnerabilities against machines you do not own or are not explicitly authorised to test.  
-> You are only allowed to begin hands-on tasks after accepting the course rules in Moodle.
+## H4: Johnny Tables
 
----
-
-## x) Read & Summarize (brief bullets + one comment or question each)
-
-### OWASP Top 10 (2021)
-#### A01:2021 - Broken Access Control
+### A01:2021 - Broken Access Control
 - Users can do things they’re not supposed to, like seeing or changing other people’s data.
 - Common problems:
   - Changing URLs or data to access someone else’s account.
@@ -23,7 +16,7 @@
   Thoughts: I was suprised to learn that simple URL changes can expose sensitive data easily.
   
 
-#### A05:2021 — Security Misconfiguration
+### A05:2021 - Security Misconfiguration
 - The app or system is not set up securely so it might have weak settings or default passwords still active.
 - Common problems:
   - Leaving sample apps or default accounts on live servers.
@@ -35,10 +28,10 @@
   - Remove anything unnecessary.
   - Regularly update and review configurations and permissions.
   - Automate security checks and use security headers.
-  - 
+    
 Thoughts: Is it more a lack of awareness or just pressure to ship fast that leads to these misconfigurations?
   
-#### A06:2021 — Vulnerable and Outdated Components
+### A06:2021 - Vulnerable and Outdated Components
 - In short terms, Your app uses old or unsafe parts that hackers can exploit.
 - There is risk if:
   - You don’t know what versions of software you’re using.
@@ -54,7 +47,7 @@ Thoughts: Is it more a lack of awareness or just pressure to ship fast that lead
   Thoughts: it’s easy to forget how much modern apps rely on third-party stuff. But if even one of those pieces is outdated, it’s like leaving the back door open. Makes me think twice about skipping those update reminders.
 
 
-#### A03:2021 - Injection
+### A03:2021 - Injection
 - Attackers trick the app into running harmful commands by inserting malicious input.
 - The common types include:
   - SQL injection
@@ -69,7 +62,7 @@ Thoughts: Is it more a lack of awareness or just pressure to ship fast that lead
 
 Thoughts: Injection vulnerabilities highlight the critical importance of separating data from code execution. 
 
-### Munroe — xkcd 327: "Exploits of a Mom"
+### Munroe - xkcd 327: "Exploits of a Mom"
 The comic shows a mom naming her child
 " Robert'); DROP TABLE Students;-- "
 I recognized this sql query but on a second thought I realized that it is  malicious input is used to trick a system into deleting a whole database table.
@@ -147,6 +140,38 @@ sudo reboot
   - Subtask 2: I applied the WHERE clause with a population filter (>= 200000000) to list only large countries, practicing numerical comparisons in SQL.
 
 **Reference:** SQLZoo — https://sqlzoo.net/
+
+---
+## e) PortSwigger Labs — SQL injection in WHERE clause.
+
+
+The vulnerability was in the gift **category** filter where user-supplied input was concatenated directly into a SQL `WHERE` clause without sanitization or prepared statements. By manipulating the category parameter, an attacker could change the logic of the query so that it returned all products including unreleased ones. This is a good demonstration of a broken access-control issue.
+
+
+### How I found the vulnerability
+- Noted the category parameter in the URL (`?category=Gifts`) was reflected in page content.  
+- Injected a syntax-breaking character and observed a SQL error in the response, which indicated that user input reached the database query unsanitized.  
+- The error and subsequent behavioral changes (different number of results) confirmed the injection point.
+
+
+### Anatomy of the exploit (conceptual)
+> **Note:** below is a conceptual breakdown only; do **not** reuse exploit strings outside an authorised lab.
+
+**Payload entry point**  
+- The `category` parameter in the HTTP GET request is inserted directly into the `WHERE` clause on the server side. No input sanitization or parameterization was applied.
+
+**Payload purpose**  
+- The attack aims to alter the `WHERE` clause from a restrictive filter into an always-true condition, and to neutralize any subsequent filtering (e.g., `released = 1`). Conceptually this is done by:
+  1. Terminating the original string or expression.
+  2. Injecting a boolean condition that is always true (so the `WHERE` matches every row).
+  3. Commenting out the rest of the original query so protective filters are ignored.
+
+**Proof extraction method**  
+- After injection, the application responded with all products, including those where `released = 0`. The presence of previously hidden items in the response is definitive proof that the query logic was altered.
+
+**Why it works (conceptual)**  
+- Example server-side construction (conceptual):  
+
 
 
 
