@@ -17,7 +17,7 @@
   
 
 ### A05:2021 - Security Misconfiguration
-- The app or system is not set up securely so it might have weak settings or default passwords still active.
+- The app or system is not set up securely, so it might have weak settings or default passwords still active.
 - Common problems:
   - Leaving sample apps or default accounts on live servers.
   - Showing detailed error messages to users.
@@ -87,7 +87,7 @@ Using my UTM virtual machine, I was able to install successfully following the g
 apt search openjdk
 ```
 - This solved the issue since I figured out access to a different version of Java, "openjdk-21-jre", then proceeded to download it.
-- Finally, I was able to launch WebGoat using the commands mentioned in the guide. The picture below was taken from the terminal imdicating a successful launch.
+- Finally, I was able to launch WebGoat using the commands mentioned in the guide. The picture below was taken from the terminal indicating a successful launch.
   
 <img width="629" height="125" alt="Screenshot 2025-09-15 at 10 10 05 PM" src="https://github.com/user-attachments/assets/e1d2f1e8-462b-476b-b7a8-5807f58c069a"/>
 <br></br>
@@ -95,29 +95,36 @@ apt search openjdk
 - Following the guide, I changed the port and was able to open the URL on my browser as seen below.
 
 <img width="346" height="217" alt="Screenshot 2025-09-15 at 10 15 07 PM" src="https://github.com/user-attachments/assets/7ac07a0c-e3fd-4287-8d4c-8547fbabd573" />
+<br></br>
 
 References: Terokarvinen.com. (2023). Try Web Hacking on New Webgoat 2023.4. [online] Available at: https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/.
 
 ---
 
-
-## b) F12 — WebGoat 2023.4: *General: Developer tools*
+## b) F12 - WebGoat 2023.4: *General: Developer tools*
 This challenge was included at the end of the developer tools lesson.
-  1. I first opened the developers tool on the browser by pressin f12.
-  2. Then I located the networks tab and clocked on the "Go!" button as instructed.
-  3. Then I recieved a POST method as a response which contained more detailed information.
+  1. Firstly, I read and reviewed the chapters in the lesson to understand the content.
+  2. Starting the task, I opened the developer's tool on the browser by pressing F12.
+  3. Then I located the networks tab and clicked on the "Go!" button as instructed.
+  5. Then I received a POST method as a response, which contained more detailed information.
      
      <img width="601" height="413" alt="Screenshot 2025-09-15 at 10 30 46 PM" src="https://github.com/user-attachments/assets/ac62f892-c53f-485b-aee5-e1bc2bc34dca" />
 <br></br>
 
-  4. Then finally the networkNum could be accessed through the "Request" tab easily.
+  6. Initially, it took a while to locate the number from the default "Headers" tab, realizing it may be under a different tab.
+
+  7. Then, finally, the networkNum could be accessed through the "Request" tab easily.
 <br></br>
 
 <img width="512" height="181" alt="Screenshot 2025-09-15 at 10 35 36 PM" src="https://github.com/user-attachments/assets/5c2f0172-ae36-4346-910d-c85ddc09960f" />
 
+<br></br>
+
+Learnings: This exercise taught me that critical data, such as networkNum, is often hidden in the "Request" payload rather than in headers, reinforcing the importance of thoroughly inspecting all tabs in Developer Tools during security assessments.
+
 ---
 
-## c) Not Outdated — Update OS & Applications (Linux)
+## c) Update OS & Applications
 I have updated all operating system by running the following commands:
 
 ```bash
@@ -131,18 +138,18 @@ sudo reboot
 
 
 ---
-## d) Sequel — SQLZoo tasks
+## d) Sequel - SQLZoo tasks
 
-- 0 SELECT basics — notes & answers
-  1. I used the WHERE clause with a string match to retrieve the population of Germany, reinforcing how single quotes denote string values in SQL.
-  2. I employed the IN operator to filter results for multiple countries, learning how to efficiently check against a list of values.
-  3. I utilized the BETWEEN operator to find countries with areas within a specified range, understanding how inclusive range checks work in SQL.
+### 0 SELECT basics
+1. I used the `WHERE` clause with a string match to retrieve the population of Germany, reinforcing how single quotes denote string values in SQL.
+2. I employed the `IN` operator to filter results for multiple countries, learning how to efficiently check against a list of values.
+3. I utilized the `BETWEEN` operator to find countries with areas within a specified range, understanding how inclusive range checks work in SQL.
      
-- 2 SELECT from World — subtasks 1 & 2
-  - Subtask 1: I executed a basic SELECT query to retrieve all countries' names, continents, and populations, gaining an overview of the dataset's structure and content.
-  - Subtask 2: I applied the WHERE clause with a population filter (>= 200000000) to list only large countries, practicing numerical comparisons in SQL.
+### 2 SELECT from World
+- Subtask 1: I executed a basic `SELECT` query to retrieve all countries' names, continents, and populations, gaining an overview of the dataset's structure and content.
+- Subtask 2: I applied the `WHERE` clause with a population filter `>= 200000000` to list only large countries, practicing numerical comparisons in SQL.
 
-**Reference:** SQLZoo — https://sqlzoo.net/
+**Reference:** sqlzoo.net. (n.d.). SQLZOO. [online] Available at: https://sqlzoo.net/wiki/SQL_Tutorial.
 
 ---
 ## e) PortSwigger Labs — SQL injection in WHERE clause.
