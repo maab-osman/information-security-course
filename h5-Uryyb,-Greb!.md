@@ -115,8 +115,9 @@ When I tried to launch KeePassXC, I got a Qt display error because I was working
 
 
 <img width="1426" height="139" alt="Screenshot 2025-09-22 at 10 46 42 PM" src="https://github.com/user-attachments/assets/efd996c9-1381-403c-88e7-7564764f75a9" />
+<br></br>
 
-Since I needed a solution that worked in my terminal environment, I installed pass, a command-line password manager that integrates with GPG:
+Since I needed a solution that worked in my terminal environment, I installed pass, a command-line password manager that integrates with GPG called "pass" (www.passwordstore.org, n.d.).
 
 ```bash
 
@@ -127,10 +128,13 @@ sudo apt install pass -y
 
 <img width="685" height="297" alt="Screenshot 2025-09-22 at 10 21 10 PM" src="https://github.com/user-attachments/assets/1da02aa3-956e-48e1-8226-ec1c8da506cb" />
 
+<br></br>
 I initialized my password store using the fingerprint of my newly created GPG key. This ensures all my passwords will be encrypted using strong public-key cryptography.
 
 
 <img width="627" height="301" alt="Screenshot 2025-09-22 at 10 35 24 PM" src="https://github.com/user-attachments/assets/be95fcd9-cdc3-4cac-aa95-cafb0855ac43" />
+
+<br></br>
 
 I then tested the password manager by creating actual entries:
 
@@ -140,9 +144,13 @@ pass insert firstExample       # Added my account password
 pass generate new 20 # Generated a strong 20-character password
 pass ls                         # Listed all my stored passwords
 ```
+
+<br></br>
 Using the last prompt, it revealed all of my stored passwords as seen below in the screenshot:
 
 <img width="272" height="91" alt="Screenshot 2025-09-22 at 10 42 29 PM" src="https://github.com/user-attachments/assets/44df0a2c-a97c-4879-9bfa-075192142c72" />
+
+<br></br>
 
 According to the National Cyber Security Centre (NCSC), password managers are essential because they allow users to create and store strong, unique passwords for each of their online accounts without having to remember them all. This is important because reusing passwords across different accounts increases the risk that if one account is compromised, others could be as well. Password managers also offer features such as:
 - Automatic password generation for strong, unique passwords.
@@ -152,6 +160,13 @@ According to the National Cyber Security Centre (NCSC), password managers are es
 
 These tools make it practical to follow best security practices, such as using different passwords for every account, which would otherwise be difficult or impossible to manage manually (NCSC, 2025).
 
+Refrences: 
+- GitHub. (2022). KeePassXC. [online] Available at: https://github.com/keepassxreboot/keepassxc.
+- National Cyber Security Centre (2018). Password managers: How they help you secure passwords. [online] www.ncsc.gov.uk. Available at: https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers.
+-  www.passwordstore.org. (n.d.). Pass: The Standard Unix Password Manager. [online] Available at: https://www.passwordstore.org/.
+
+
+‌---
 
 ## Voluntary: t) ROT13 Analysis
 
