@@ -192,6 +192,7 @@ print("Twice:", twice)
 <br></br>
 
 These were the results below:
+
 <img width="340" height="111" alt="Screenshot 2025-09-23 at 1 11 28 PM" src="https://github.com/user-attachments/assets/9258933d-bbf8-4d60-86cb-8c17c495abd9" />
 
 So double ROT13 is not extra security at all. It’s basically like not encrypting the message.
