@@ -92,10 +92,10 @@ ssh-keygen -t ed25519
 ssh-copy-id maabo@localhost
 ssh maabo@localhost  # Verified passwordless login worked
 ```
-
-<br></br>
-
 <img width="716" height="306" alt="Screenshot 2025-09-23 at 1 25 05 PM" src="https://github.com/user-attachments/assets/d030f591-9f40-40c6-8e74-032702ff9034" />
+<img width="1084" height="141" alt="Screenshot 2025-09-23 at 1 27 06 PM" src="https://github.com/user-attachments/assets/8427df4a-1e2b-41e4-8926-d83114ec474f" />
+
+
 
 <br></br>
 
