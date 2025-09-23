@@ -1,4 +1,4 @@
-##### Uryyb, Greb! - Homework Report
+# Uryyb, Greb! - Homework Report
 
 
 ---
@@ -8,14 +8,14 @@
 - Plaintext to Ciphertext transformation using algorithms and keys.
 - Security goals include confidentiality, authentication and integrity.
 - Kerckhoffs's principle ensures Security through key secrecy, not algorithm secrecy.
-- There are 2 algorithim types, Symmetric (same key) vs Public-key (different keys).
+- There are 2 algorithim types, Symmetric vs Public-key.
 - Bits vs characters as basic units
 - Attack types include ciphertext-only, Known-plaintext, Chosen-plaintext and Adaptive-chosen-plaintext
 - Security levels include unconditionally secure and Computationally secure
 - We can break complexity by Measured by data, processing, and storage requirements
 - All classical ciphers vulnerable to frequency analysis and modern cryptanalysis
 - Simple XOR is defined as the trivial to break despite commercial popularity
-- One-time Pad is the perfect secrecy if keys are truly random and never reused
+- One time Pad is the perfect secrecy if keys are truly random and never reused
 - Modern algorithims include DES (symmetric), RSA (public-key) and DSA (digital signatures)
 - Public algorithms withstand scrutiny better than secret ones
 - One-time pads provide unconditional security but are impractical for most uses
@@ -25,9 +25,9 @@
 - Steganography hides existence of message entirely
 
 Reflection Question:
-Since one-time pads are perfectly secure but too hard to use for most people today, what does this show us about the balance between perfect security and what actually works in real life?
+Since one time pads are perfectly secure but too hard to use for most people today, what does this show us about the balance between perfect security and what actually works in real life?
 
-**Reference:** Bruce Schneier — *Applied Cryptography* (Ch.1)
+**Reference:** CHAPTER 1: Foundations (2025). Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. [online] O’Reilly Online Learning. Available at: https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001.
 
 ---
 
@@ -54,9 +54,10 @@ gpg --decrypt encrypted.pgp      # Decrypt & verify
 
 
 Thoughts & Insights:
-- Trust Establishment is the hardest part as cryptographic security means nothing if you verify the wrong key
+- Trust establishment is the hardest part as cryptographic security means nothing if you verify the wrong key
 
-**Reference:** Karvinen 2023 — PGP guide
+**Reference:** Terokarvinen.com. (2023). PGP - Send Encrypted and Signed Message - gpg. [online] Available at: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ [Accessed 23 Sep. 2025].
+
 
 ---
 
@@ -70,11 +71,17 @@ sudo apt install openssh-server -y
 sudo systemctl start ssh
 sudo systemctl enable ssh
 ```
+<br></br>
 
 The screenshot below shows my first SSH connection to localhost. I encountered the expected host key verification warning since this was the first time connecting. I verified the ED25519 fingerprint and accepted it by typing "yes".
 
 <img width="598" height="40" alt="Screenshot 2025-09-22 at 10 01 54 PM" src="https://github.com/user-attachments/assets/cb6afd75-e862-44b8-bc6e-92145dd9c914" />
 
+<br></br>
+
+Tutorial Source: www.digitalocean.com. (n.d.). How To Use SSH to Connect to a Remote Server | DigitalOcean. [online] Available at: https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server.
+
+‌
 ## b) Automate SSH with Public Keys
 
 To eliminate the need for password authentication, I set up public key authentication. I generated an ED25519 SSH key pair, accepting the default storage location. Then I copied my public key to the remote host's authorized_keys file using ssh-copy-id.
@@ -84,11 +91,16 @@ ssh-keygen -t ed25519
 ssh-copy-id maabo@localhost
 ssh maabo@localhost  # Verified passwordless login worked
 ```
+
+<br></br>
 <img width="627" height="99" alt="Screenshot 2025-09-22 at 9 54 33 PM" src="https://github.com/user-attachments/assets/984b3dd6-928f-4148-bff7-881e380c04c4" />
 
+<br></br>
+
+Tutorial Source: NeuralNine (2024). SSH Key Authentication on Linux Server: Easy Setup Tutorial. [online] YouTube. Available at: https://www.youtube.com/watch?v=6vTcH_kMrhU [Accessed 23 Sep. 2025].
 
 
-## c) Password Manager — KeePassXC
+## c) Password Manager
 I first attempted to install KeePassXC, which is a popular graphical password manager:
 
 ```bash
@@ -97,6 +109,7 @@ I first attempted to install KeePassXC, which is a popular graphical password ma
 sudo apt update
 sudo apt install keepassxc -y
 ```
+<br></br>
 
 When I tried to launch KeePassXC, I got a Qt display error because I was working in a terminal-only SSH environment without a graphical interface. This taught me that tool selection must match the environment constraints.
 
@@ -128,4 +141,38 @@ pass generate new 20 # Generated a strong 20-character password
 pass ls                         # Listed all my stored passwords
 ```
 Using the last prompt, it revealed all of my stored passwords as seen below in the screenshot:
+
 <img width="272" height="91" alt="Screenshot 2025-09-22 at 10 42 29 PM" src="https://github.com/user-attachments/assets/44df0a2c-a97c-4879-9bfa-075192142c72" />
+
+According to the National Cyber Security Centre (NCSC), password managers are essential because they allow users to create and store strong, unique passwords for each of their online accounts without having to remember them all. This is important because reusing passwords across different accounts increases the risk that if one account is compromised, others could be as well. Password managers also offer features such as:
+- Automatic password generation for strong, unique passwords.
+- Autofill functionality, which helps protect against phishing by only filling passwords on legitimate sites.
+- Synchronization across devices, making it easier to log in securely from anywhere.
+- Compromise warnings if a password has been breached or leaked.
+
+These tools make it practical to follow best security practices, such as using different passwords for every account, which would otherwise be difficult or impossible to manage manually (NCSC, 2025).
+
+
+## Voluntary: t) ROT13 Analysis
+
+If I use ROT13 to hide a message, it shifts each letter by 13 places in the alphabet. 
+
+I wanted to see what happens if I use ROT13 twice, so I tried it in Python. I wrote a short program with the codecs library. When I used ROT13 once on the word HELLO, it changed to URYYB. When I ran ROT13 again on that result, it turned back into HELLO. This showed me that double ROT13 just gives the original text, so it doesn’t add any extra security.
+
+```bash
+
+import codecs
+
+word = "HELLO"
+once = codecs.encode(word, 'rot_13')
+twice = codecs.encode(once, 'rot_13')
+
+print("Original:", word)
+print("Once:", once)
+print("Twice:", twice)
+
+```
+
+So double ROT13 is not extra security at all. It’s basically like not encrypting the message.
+
+
