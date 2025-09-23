@@ -57,7 +57,7 @@ Thoughts & Insights:
 - Trust establishment is the hardest part as cryptographic security means nothing if you verify the wrong key
 
 **Reference:** Terokarvinen.com. (2023). PG
-P - Send Encrypted and Signed Message - gpg. [online] Available at: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ [Accessed 23 Sep. 2025].
+P - Send Encrypted and Signed Message - gpg. [online] Available at: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ [Accessed 20 Sep. 2025].
 
 
 ---
@@ -98,7 +98,7 @@ ssh maabo@localhost  # Verified passwordless login worked
 
 <br></br>
 
-Tutorial Source: NeuralNine (2024). SSH Key Authentication on Linux Server: Easy Setup Tutorial. [online] YouTube. Available at: https://www.youtube.com/watch?v=6vTcH_kMrhU [Accessed 23 Sep. 2025].
+Tutorial Source: NeuralNine (2024). SSH Key Authentication on Linux Server: Easy Setup Tutorial. [online] YouTube. Available at: https://www.youtube.com/watch?v=6vTcH_kMrhU [Accessed 21 Sep. 2025].
 
 
 ## c) Password Manager
