@@ -56,7 +56,8 @@ gpg --decrypt encrypted.pgp      # Decrypt & verify
 Thoughts & Insights:
 - Trust establishment is the hardest part as cryptographic security means nothing if you verify the wrong key
 
-**Reference:** Terokarvinen.com. (2023). PGP - Send Encrypted and Signed Message - gpg. [online] Available at: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ [Accessed 23 Sep. 2025].
+**Reference:** Terokarvinen.com. (2023). PG
+P - Send Encrypted and Signed Message - gpg. [online] Available at: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ [Accessed 23 Sep. 2025].
 
 
 ---
@@ -187,7 +188,14 @@ print("Once:", once)
 print("Twice:", twice)
 
 ```
+<br></br>
+
+These were the results down below:
+<img width="340" height="111" alt="Screenshot 2025-09-23 at 1 11 28 PM" src="https://github.com/user-attachments/assets/9258933d-bbf8-4d60-86cb-8c17c495abd9" />
 
 So double ROT13 is not extra security at all. It’s basically like not encrypting the message.
 
+Reference: GeeksforGeeks (2017). ROT13 cipher. [online] GeeksforGeeks. Available at: https://www.geeksforgeeks.org/dsa/rot13-cipher/.
+
+‌
 
