@@ -62,36 +62,34 @@ Thoughts & Insights:
 
 ## a) Install OpenSSH Server & Connect
 
+I started by installing the OpenSSH server on my Debian system. After ensuring the package manager was updated, I installed the SSH server and enabled it to start automatically on boot.
+
 ```bash
-# Update packages
-sudo apt update
 
-# Install OpenSSH server
 sudo apt install openssh-server -y
-
-# Start and enable the ssh service
 sudo systemctl start ssh
 sudo systemctl enable ssh
-
-# Test connection to localhost
-ssh $(whoami)@localhost
-
 ```
+
+The screenshot below shows my first SSH connection to localhost. I encountered the expected host key verification warning since this was the first time connecting. I verified the ED25519 fingerprint and accepted it by typing "yes".
+
+<img width="598" height="40" alt="Screenshot 2025-09-22 at 10 01 54 PM" src="https://github.com/user-attachments/assets/cb6afd75-e862-44b8-bc6e-92145dd9c914" />
 
 ## b) Automate SSH with Public Keys
 
+To eliminate the need for password authentication, I set up public key authentication. I generated an ED25519 SSH key pair, accepting the default storage location. Then I copied my public key to the remote host's authorized_keys file using ssh-copy-id.
+
 ```bash
-# Generate an Ed25519 SSH key pair (if none exists)
-ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ""
-
-# Copy public key to authorized_keys for passwordless auth
-ssh-copy-id $(whoami)@localhost
-
-# Test passwordless login
-ssh $(whoami)@localhost
+ssh-keygen -t ed25519  
+ssh-copy-id maabo@localhost
+ssh maabo@localhost  # Verified passwordless login worked
 ```
+<img width="627" height="99" alt="Screenshot 2025-09-22 at 9 54 33 PM" src="https://github.com/user-attachments/assets/984b3dd6-928f-4148-bff7-881e380c04c4" />
+
+
 
 ## c) Password Manager — KeePassXC
+I first attempted to install KeePassXC, which is a popular graphical password manager:
 
 ```bash
 
@@ -100,3 +98,34 @@ sudo apt update
 sudo apt install keepassxc -y
 ```
 
+When I tried to launch KeePassXC, I got a Qt display error because I was working in a terminal-only SSH environment without a graphical interface. This taught me that tool selection must match the environment constraints.
+
+
+<img width="1426" height="139" alt="Screenshot 2025-09-22 at 10 46 42 PM" src="https://github.com/user-attachments/assets/efd996c9-1381-403c-88e7-7564764f75a9" />
+
+Since I needed a solution that worked in my terminal environment, I installed pass, a command-line password manager that integrates with GPG:
+
+```bash
+
+sudo apt install pass -y
+
+```
+
+
+<img width="685" height="297" alt="Screenshot 2025-09-22 at 10 21 10 PM" src="https://github.com/user-attachments/assets/1da02aa3-956e-48e1-8226-ec1c8da506cb" />
+
+I initialized my password store using the fingerprint of my newly created GPG key. This ensures all my passwords will be encrypted using strong public-key cryptography.
+
+
+<img width="627" height="301" alt="Screenshot 2025-09-22 at 10 35 24 PM" src="https://github.com/user-attachments/assets/be95fcd9-cdc3-4cac-aa95-cafb0855ac43" />
+
+I then tested the password manager by creating actual entries:
+
+```bash
+
+pass insert firstExample       # Added my account password
+pass generate new 20 # Generated a strong 20-character password
+pass ls                         # Listed all my stored passwords
+```
+Using the last prompt, it revealed all of my stored passwords as seen below in the screenshot:
+<img width="272" height="91" alt="Screenshot 2025-09-22 at 10 42 29 PM" src="https://github.com/user-attachments/assets/44df0a2c-a97c-4879-9bfa-075192142c72" />
