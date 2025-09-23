@@ -94,7 +94,8 @@ ssh maabo@localhost  # Verified passwordless login worked
 ```
 
 <br></br>
-<img width="627" height="99" alt="Screenshot 2025-09-22 at 9 54 33 PM" src="https://github.com/user-attachments/assets/984b3dd6-928f-4148-bff7-881e380c04c4" />
+
+<img width="716" height="306" alt="Screenshot 2025-09-23 at 1 25 05 PM" src="https://github.com/user-attachments/assets/d030f591-9f40-40c6-8e74-032702ff9034" />
 
 <br></br>
 
