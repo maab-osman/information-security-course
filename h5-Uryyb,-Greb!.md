@@ -8,12 +8,12 @@
 - Plaintext to Ciphertext transformation using algorithms and keys.
 - Security goals include confidentiality, authentication and integrity.
 - Kerckhoffs's principle ensures Security through key secrecy, not algorithm secrecy.
-- There are 2 algorithim types, Symmetric vs Public-key.
+- There are 2 algorithm types, Symmetric vs Public-key.
 - Bits vs characters as basic units
 - Attack types include ciphertext-only, Known-plaintext, Chosen-plaintext and Adaptive-chosen-plaintext
-- Security levels include unconditionally secure and Computationally secure
-- We can break complexity by Measured by data, processing, and storage requirements
-- All classical ciphers vulnerable to frequency analysis and modern cryptanalysis
+- Security levels include unconditionally secure and computationally secure
+- We can break complexity by measuring data, processing, and storage requirements
+- All classical ciphers are vulnerable to frequency analysis and modern cryptanalysis
 - Simple XOR is defined as the trivial to break despite commercial popularity
 - One time Pad is the perfect secrecy if keys are truly random and never reused
 - Modern algorithims include DES (symmetric), RSA (public-key) and DSA (digital signatures)
@@ -39,7 +39,7 @@ Since one time pads are perfectly secure but too hard to use for most people tod
 - Each user creates their own keypair using gpg --gen-key
 - Public keys are exported and shared.
 - Fingerprints must be verified out-of-band to establish trust
-- Messages encrypted with recipient's public key, signed with sender's private key
+- Messages encrypted with the recipient's public key, signed with sender's private key
 - Recipient decrypts with their private key, verifies signature with sender's public key
 
 Key Commands Demonstrated:
@@ -161,7 +161,7 @@ According to the National Cyber Security Centre (NCSC), password managers are es
 
 These tools make it practical to follow best security practices, such as using different passwords for every account, which would otherwise be difficult or impossible to manage manually (NCSC, 2025).
 
-Refrences: 
+References: 
 - GitHub. (2022). KeePassXC. [online] Available at: https://github.com/keepassxreboot/keepassxc.
 - National Cyber Security Centre (2018). Password managers: How they help you secure passwords. [online] www.ncsc.gov.uk. Available at: https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers.
 -  www.passwordstore.org. (n.d.). Pass: The Standard Unix Password Manager. [online] Available at: https://www.passwordstore.org/.
@@ -190,7 +190,7 @@ print("Twice:", twice)
 ```
 <br></br>
 
-These were the results down below:
+These were the results below:
 <img width="340" height="111" alt="Screenshot 2025-09-23 at 1 11 28 PM" src="https://github.com/user-attachments/assets/9258933d-bbf8-4d60-86cb-8c17c495abd9" />
 
 So double ROT13 is not extra security at all. It’s basically like not encrypting the message.
