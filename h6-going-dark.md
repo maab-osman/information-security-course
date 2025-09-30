@@ -91,6 +91,8 @@ Source: Shavers, B. and Bair, J. (2016). Hiding Behind the Keyboard. Syngress.
 ### Trial 2 - Tor Launcher
 - The second availabe option was **torbrowser-launcher**. I ran the commands and this was the result:
 <img width="813" height="243" alt="Screenshot 2025-09-30 at 11 47 19 AM" src="https://github.com/user-attachments/assets/f750aee1-4a43-4e6b-bae6-55585375fe89" />
+<br></br>
+
 - There were missing dependencies (software-properties-common) and other tools weren't available in default repositories.
 - Also Tor Project repository signing issues prevented secure installation.
 
