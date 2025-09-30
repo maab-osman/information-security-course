@@ -169,11 +169,3 @@ Source: Shavers, B. and Bair, J. (2016). Hiding Behind the Keyboard. Syngress.
 
 
 
-
-
-
-- Command line:
-  ```bash
-  sudo apt update
-  sudo apt install torbrowser-launcher -y
-  torbrowser-launcher
