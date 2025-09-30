@@ -70,6 +70,9 @@ It's one of the most effective and simple tools for anonymous browsing and commu
 - The system's design is clever because no single relay has the full picture.
 - This chapter shows that human error is the biggest vulnerability. It's a classic case of the system being only as strong the person using it.
 - I was suprised to learn that most investigations succeed through traditional detective work, not by "breaking" the tech.
+
+Source: Shavers, B. and Bair, J. (2016). Hiding Behind the Keyboard. Syngress.
+
 ---
 
 ## a) Install TOR Browser and Access .onion Network
