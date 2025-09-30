@@ -2,9 +2,7 @@
 
 > **Legal & Ethics Reminder**  
 > In Finland, it’s legal to use TOR at the time of writing.  
-> If you are remotely taking this course from another jurisdiction, laws might differ.  
-> Obviously, it’s illegal to do illegal things in TOR, just like it’s illegal to do illegal things anywhere.  
-> Only do legal things.  
+
 
 ---
 
