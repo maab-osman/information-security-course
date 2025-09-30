@@ -203,8 +203,11 @@ References and guides:
   <br></br>
 
 ### Key Takeaways
-- Tor hosts legitimate privacy services alongside illicit content
-- Blockchain provides a transparent transaction history
+- Every Bitcoin transaction is permanently recorded on a public ledger that anyone can inspect.
+- I learned that law enforcement and researchers can track how much money flows through darknet addresses and see transaction patterns and timing.
+- This specific finding told me that this might be a new service just starting out ot they might not have attracted many donors yet.
+- This showed me that even in the most anonymous corners of the internet, financial footprints remain.  Every transaction becomes part of a permanent, public record that can be analyzed years later.
+
 
 Sources used:
 
