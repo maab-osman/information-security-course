@@ -101,6 +101,7 @@ Source: Shavers, B. and Bair, J. (2016). Hiding Behind the Keyboard. Syngress.
 
 <img width="792" height="514" alt="Screenshot 2025-09-30 at 11 42 02 AM" src="https://github.com/user-attachments/assets/5312295c-6a65-4dcc-99e3-b90b1709cc17" />
 
+<br></br>
 
 - There were hardware emulation problems as there were USB port errors and other hardware compatibility issues in UTM.
 - Expanded .img file approach worked but was impractical for daily use since teh performance was very weak.
@@ -113,34 +114,48 @@ Source: Shavers, B. and Bair, J. (2016). Hiding Behind the Keyboard. Syngress.
   ```
     
 <img width="796" height="369" alt="Screenshot 2025-09-30 at 12 11 18 PM" src="https://github.com/user-attachments/assets/930ffa0c-9b27-4919-acba-55195f59fdce" />
+<br></br>
 
 - I configured Firefox manually  by implementing SOCKS5 proxy 127.0.0.1:9050 through the network settings.
 - I then verified Tor connectivity through this address check.torproject.org as seen below:
   
 <img width="1029" height="305" alt="Screenshot 2025-09-30 at 12 15 54 PM" src="https://github.com/user-attachments/assets/ec30791e-c4ee-4a4c-bf2f-ad84c06ce3c4" />
+<br></br>
 
 - At this point I was able to accessed legitimate .onion sites. So I opened a familiar search engine: DuckDuckGo to begin exploring.
 
 <img width="1280" height="628" alt="Screenshot 2025-09-30 at 10 57 54 AM" src="https://github.com/user-attachments/assets/4929cefe-0079-4afc-a4ed-0cb810a01d48" />
+<br></br>
 
 - The search results were primarily from the clearnet. I realized that DuckDuckGo, even when accessed via its .onion address, is still a clearnet search engine that indexes the regular web. It does not exclusively search for .onion sites. This meant that I wasn't fully exploring the Tor network as the assignment required.
 - This  led me to seek out a search engine that specifically indexes .onion sites like Ahmia, a Finnish project that is designed to search only within the Tor network. 
 
 <img width="1109" height="503" alt="Screenshot 2025-09-30 at 11 11 23 AM" src="https://github.com/user-attachments/assets/ca5519b1-47f6-485a-ab5b-7a76f8d15f74" />
+<br></br>
+
 
 - I began the exploration by typing keywords like "Marketplace".
+  
+<img width="947" height="306" alt="Screenshot 2025-09-30 at 11 19 45 AM" src="https://github.com/user-attachments/assets/f8bbbb29-b4a3-4ce2-b244-a0ff574b17f8" />
 
-<img width="1283" height="675" alt="Screenshot 2025-09-30 at 11 18 54 AM" src="https://github.com/user-attachments/assets/b0303386-abd1-468c-888a-7bf3ab3afa42" />
+<br></br>
+
 - The marketplaces had surprisingly professional interfaces like the one below:
 
-<img width="1263" height="614" alt="Screenshot 2025-09-30 at 11 16 48 AM" src="https://github.com/user-attachments/assets/70fc9c1e-1c7f-46e7-9aba-78ed3d9662fe" />
-
-- There were many forumns that I able to find that had detailed discussions about privacy and security. Heres an example:
-  
 <img width="1270" height="690" alt="Screenshot 2025-09-30 at 11 18 04 AM" src="https://github.com/user-attachments/assets/9498154a-1205-4677-ab46-3aa6f93170c0" />
 
-- And finally, I decided to search for major organizations like the BBC with a proper .onion address. This wasn't some shady underground site, it was legitimate journalism making itself accessible to people in censored countries.
+<br></br>
 
+
+- There were many forumns that I able to find that had detailed discussions about privacy and security. Heres an example:
+
+<img width="1283" height="675" alt="Screenshot 2025-09-30 at 11 18 54 AM" src="https://github.com/user-attachments/assets/b0303386-abd1-468c-888a-7bf3ab3afa42" />
+  
+<br></br>
+
+- And finally, I decided to search for major organizations like the BBC with a proper .onion address. This wasn't some shady underground site, it was legitimate journalism making itself accessible to people in censored countries.
+  
+<img width="1263" height="614" alt="Screenshot 2025-09-30 at 11 16 48 AM" src="https://github.com/user-attachments/assets/70fc9c1e-1c7f-46e7-9aba-78ed3d9662fe" />
 <img width="947" height="306" alt="Screenshot 2025-09-30 at 11 19 45 AM" src="https://github.com/user-attachments/assets/f8bbbb29-b4a3-4ce2-b244-a0ff574b17f8" />
 
 
