@@ -1,4 +1,4 @@
-# Homework H6: Going Dark
+# Homework H6 - Going Dark
 
 > **Legal & Ethics Reminder**  
 > In Finland, it’s legal to use TOR at the time of writing.  
