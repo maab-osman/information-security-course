@@ -82,6 +82,8 @@ Source: Shavers, B. and Bair, J. (2016). Hiding Behind the Keyboard. Syngress.
 - I downloaded the Tor Browser Bundle, excited to get started. But when I tried to run it, my screen flashed with an error that would become all too familiar: "requires a CPU with SSE2 support.
 <img width="600" height="400" alt="Screenshot 2025-09-30 at 11 29 48 AM" src="https://github.com/user-attachments/assets/6caac762-1e71-4c65-a675-151e8818caa8" />
 
+<br></br>
+
   - Possible reason for this is that I was running this in a UTM virtual machine on my Mac, and apparently, the emulation didn't include this instruction set.
   -  I tried the 32-bit version next, thinking it might be more compatible. But then I encountered 404 errors, the specific version I needed didn't exist for 32-bit architecture.
 
