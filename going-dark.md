@@ -78,7 +78,28 @@ Source: Shavers, B. and Bair, J. (2016). Hiding Behind the Keyboard. Syngress.
 ## a) Install TOR Browser and Access .onion Network
 
 **Steps taken (choose one):**
-- Tor Project: [https://www.torproject.org/download/](https://www.torproject.org/download/)  
+- Tor Project: [https://www.torproject.org/download/](https://www.torproject.org/download/)
+
+<img width="1280" height="628" alt="Screenshot 2025-09-30 at 10 57 54 AM" src="https://github.com/user-attachments/assets/4929cefe-0079-4afc-a4ed-0cb810a01d48" />
+
+<img width="1109" height="503" alt="Screenshot 2025-09-30 at 11 11 23 AM" src="https://github.com/user-attachments/assets/ca5519b1-47f6-485a-ab5b-7a76f8d15f74" />
+
+<img width="1263" height="614" alt="Screenshot 2025-09-30 at 11 16 48 AM" src="https://github.com/user-attachments/assets/70fc9c1e-1c7f-46e7-9aba-78ed3d9662fe" />
+<img width="1270" height="690" alt="Screenshot 2025-09-30 at 11 18 04 AM" src="https://github.com/user-attachments/assets/9498154a-1205-4677-ab46-3aa6f93170c0" />
+
+<img width="947" height="306" alt="Screenshot 2025-09-30 at 11 19 45 AM" src="https://github.com/user-attachments/assets/f8bbbb29-b4a3-4ce2-b244-a0ff574b17f8" />
+
+<img width="1283" height="675" alt="Screenshot 2025-09-30 at 11 18 54 AM" src="https://github.com/user-attachments/assets/b0303386-abd1-468c-888a-7bf3ab3afa42" />
+
+
+
+
+
+
+
+
+
+
 - Command line:
   ```bash
   sudo apt update
