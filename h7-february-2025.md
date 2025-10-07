@@ -1,10 +1,8 @@
-#### H7 — February2025!
-
-> **Legal & ethics:** Perform cracking exercises only on hashes/files you are explicitly allowed to test (your own test files, course lab files, or other authorized material). Do not attempt to crack real user passwords or files you do not own.
+## H7 — February2025!
 
 ---
 
-### Schneier (2015) Applied Cryptography
+### x) Schneier (2015) Applied Cryptography
 #### 2.3 One-Way Functions
 
   - A one-way function is easy to compute but hard to reverse. You can get f(x) from x easily, but not the other way around.
@@ -32,11 +30,11 @@ My thoughts
 Hashes are like digital symbolized as fingerprints as they super useful for checking integrity and authenticity, not secrecy.
 
 **References**
-- Schneier, B. (2015). *Applied Cryptography* — Sections 2.3 & 2.4
+- Schneier, B. and Diffie, W. (2015). Applied Cryptography: protocols, algorithms, and Source Code in C. Indianapolis (Ind.): Wiley, Cop.
 
 ---
 
-## a) Install Hashcat & Test with a Sample Hash
+## a&b) Install Hashcat & Test with a Sample Hash
 - I started by reading Tero's article about hashcat and understanding its capabilities for password cracking and recovery.
 - The first challenge was installing hashcat on my Linux system and understanding the different hash modes. I used the command down below:
 
@@ -74,6 +72,7 @@ rm rockyou.txt.tar.gz
 
 - Hashcat started testing passwords from the wordlist.
 - When it finished, I checked the result:
+  
   <img width="549" height="40" alt="Screenshot 2025-10-06 at 11 55 35 PM" src="https://github.com/user-attachments/assets/3b62eacb-8982-466d-b9de-6e65535b4314" />
 
 - cat solved, This means the hash was successfully cracked.
@@ -84,16 +83,45 @@ rm rockyou.txt.tar.gz
 - MD5 is not secure anymore because it’s too fast and easy to brute-force.
 - Using longer and unique passwords can protect against such attacks.
 
+Source: Terokarvinen.com. (2022). Cracking Passwords with Hashcat. [online] Available at: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/ [Accessed 6 Oct. 2025].
+
 ---
 
-## Voluntary (easy) — Crack a ZIP file password
+## p) Voluntary — Forbes 2019: Jackpotting ATM's (Automated Teller Machines) - Its easier than you might think
 
-- I created a test folder and put one file inside:
-  ```bash
-  mkdir zip-test
-  echo "This is a test file for the course" > zip-test/readme.txt
-```
+- Modern ATMs are basically standard Windows PCs with peripherals
+- Only 4 major vendors dominate the market (Diebold Nixdorf, NCR, Siemens, Hitachi)
+- Universal keys available online as physical security is terrible
+- Most ATMs use XFS middleware that creates portable attacks
+- There are some common attack methods like physical access via weak locks or forcing casings
+- Network attacks also occur but 30% don't authenticate backend properly
+- Hard drive swapping since most don't use full disk encryption
+- Black box attacks involves attaching devices to control cash dispensers
+- Man-in-the-middle attacks on network connections
+- There are several shocking security gaps such as default passwords everywhere
+- Outdated software which is rarely patched
+- Poor network security using cheap routers
+- No full disk encryption (less than 10% of ATMs)
+- Weak physical installation
+- Most cash theft still involves brute force
+- Sophisticated attacks target backend systems to remove withdrawal limits
+- Malware families exist that work across ATM brands
+- Attacks often sniff card data first, then cash out later
+- There are defense recommendations such as using full disk encryption with TPM
+- Proper physical installation
+- Network segmentation and proper firewalls
+- Regular patching and updates
+- Application whitelisting properly configured
+- Mutual authentication for all components
 
+My Reflection
 
+- This talk really exposes how overestimated ATM security is in the public mind. What struck me most was how these critical financial systems rely on basic Windows computers with minimal hardening. The fact that universal keys are easily purchasable and full disk encryption is rarely used shows how security fundamentals are neglected even in high value targets.
+- The homogeneity of systems means one successful attack can scale globally, which is both terrifying for security but also highlights where focused improvements could have massive impact. It's clear that physical and digital security can't be separated since weak locks undermine all the technical controls.
+- Most concerning is the cultural issue where ATMs are treated as "working systems don't touch" rather than constantly evolving security threats. This presentation makes me realize that sometimes the biggest vulnerabilities aren't sophisticated zero-days, but basic hygiene failures at scale.
+
+Source: Disobey (2019). Jackpotting ATM’s (Automated Teller Machines) - Its easier than you might think - Alexander Forbes. [online] YouTube. Available at: https://www.youtube.com/watch?v=ThPJrPf7O2s [Accessed 6 Oct. 2025].
+
+‌
 
 
