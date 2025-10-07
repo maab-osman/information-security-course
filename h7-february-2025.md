@@ -1,4 +1,4 @@
-## H7 — February2025!
+## H7 - February2025!
 
 ---
 
@@ -87,7 +87,7 @@ Source: Terokarvinen.com. (2022). Cracking Passwords with Hashcat. [online] Avai
 
 ---
 
-## p) Voluntary — Forbes 2019: Jackpotting ATM's (Automated Teller Machines) - Its easier than you might think
+## p) Voluntary - Forbes 2019: Jackpotting ATM's (Automated Teller Machines) - Its easier than you might think
 
 - Modern ATMs are basically standard Windows PCs with peripherals
 - Only 4 major vendors dominate the market (Diebold Nixdorf, NCR, Siemens, Hitachi)
